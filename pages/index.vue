@@ -1,7 +1,53 @@
-<script setup></script>
+<script setup>
+
+const links = [
+  { name: 'Főoldal', path: '/' },
+  { name: 'Galéria', path: '/galeria' },
+  { name: 'Rólunk', path: '/rolunk' },
+  { name: 'Kapcsolat', path: '/kapcsolat' },
+  { name: 'Ajánlatkérés', path: '/ajanlatkeres' },
+  { name: 'Szolgáltatások', path: '/szolgaltatasok' },
+  { name: 'Letölthető anyagok', path: '/letoltheto-anyagok' },
+]
+
+const isMenuOpen = ref(false)
+</script>
 
 <template>
-  test
+  <section>
+    <div class="nav-box header-content__nav-box d-flex">
+      <button
+        @click="isMenuOpen = !isMenuOpen"
+        class="hamburger"
+        :class="{ open: isMenuOpen }"
+      >
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+      <nav :class="{ 'menu--open': isMenuOpen, menu: true }" id="menu">
+        <ul id="menu__list" class="menu__list d-flex">
+          <li v-for="link in links" :key="link.path" class="menu__list__li">
+            <NuxtLink
+              :to="link.path"
+              :class="['menu__item text-color text-transform-uppercase']"
+            >
+              <template v-if="link.imagePath">
+                <NuxtImg
+                  class="menu__list__li__img"
+                  height="100%"
+                  :src="link.imagePath"
+                  :alt="link.name"
+                />
+              </template>
+              <template v-else>
+                {{ link.name }}
+              </template>
+            </NuxtLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
 </template>
 
-<style scoped></style>
