@@ -19,7 +19,7 @@ const isMenuOpen = ref(false)
         <a href="/" class="header-content__logo-box__link">
           <NuxtImg
             src="/img/header/logo.png"
-            alt="Biztos Alkuszom"
+            alt="Precision Bearing kft"
             class="header-content__logo-box__link__img"
             height="100%"
           />
@@ -35,14 +35,25 @@ const isMenuOpen = ref(false)
         <div class="bar"></div>
       </button>
     </div>
-
-    <div class="header-body position-absolute">
-      <NuxtImg
+    <div class="header-body position-relative">
+      <!-- <NuxtImg
         src="/img/slider/slider.jpg"
         alt="Biztos Alkuszom"
         class="header-body__img"
         height="100%"
-      />
+      /> -->
+      <video
+        class="header-body__video"
+        autoplay
+        loop
+        muted
+        width="1920"
+        height="100%"
+        preload="metadata"
+      >
+        <source src="/video/video.mp4" type="video/mp4" />
+        Sajnáljuk, a böngésződ nem támogatja a videó elemet.
+      </video>
       <div class="header-body__absolute-box d-flex position-absolute">
         <div class="header-body__absolute-box__text-box">
           <h1

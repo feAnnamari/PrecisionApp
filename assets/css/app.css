@@ -24,7 +24,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(100deg, #001647, #001647, #001647);
+  background: linear-gradient(100deg, #20273f, #ff8639, #20273f);
   background-size: 180% 180%;
   width: 0;
   height: 25%;
@@ -69,6 +69,7 @@ ul {
 
 .grid-2,
 .grid-3,
+.grid-4,
 .grid-7 {
   display: grid;
 }
@@ -79,6 +80,10 @@ ul {
 
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid-7 {
@@ -194,8 +199,8 @@ ul {
   font-size: 1rem;
 }
 
-.header-body,
 .header-body__img,
+.header-body__video,
 .header-body__absolute-box {
   width: 100%;
 }
@@ -214,11 +219,13 @@ ul {
 /********************  Header formating start **********************/
 
 .header-content {
-  padding: 1em 5em;
+  padding: 0 5em;
+  height: 0;
 }
 
 .header-content__logo-box {
-  width: 20%;
+  width: 23%;
+  padding: 3em 0 0 0;
 }
 
 .header-content__nav-box {
@@ -233,10 +240,6 @@ ul {
   padding: 0;
   margin: 0;
   flex-direction: column;
-}
-
-.header-body {
-  top: 0;
 }
 
 .header-body__absolute-box {
@@ -280,6 +283,25 @@ ul {
 /********************  Slider formating end **********************/
 
 /********************  Services formating start **********************/
+
+.services-content {
+  padding: 5em;
+}
+
+.services-content__img-text-box--one-bg {
+  background-image: url(/img/services/csapagyak-bg.png);
+  background-size: cover;
+}
+
+.services-content__img-text-box {
+  padding: 2em;
+}
+
+.services-content__img-text-box__img {
+  width: 9em;
+  margin: auto;
+  display: block;
+}
 
 /********************  Services formating end **********************/
 
