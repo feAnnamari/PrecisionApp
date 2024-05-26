@@ -84,6 +84,7 @@ ul {
 
 .grid-4 {
   grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
 }
 
 .grid-7 {
@@ -201,7 +202,8 @@ ul {
 
 .header-body__img,
 .header-body__video,
-.header-body__absolute-box {
+.header-body__absolute-box,
+.about-content__img-box__img {
   width: 100%;
 }
 
@@ -212,6 +214,14 @@ ul {
 
 .header-body__absolute-box__nav-box {
   align-items: center;
+}
+
+.about-content {
+  background: #20273f;
+}
+
+.about-content__img-box__img {
+  object-fit: cover;
 }
 
 /********************  Identical instructions end **********************/
@@ -288,13 +298,41 @@ ul {
   padding: 5em;
 }
 
+.services-content__h2 {
+  margin-bottom: 1.5em;
+}
+
+.services-content__img-text-box--one-bg,
+.services-content__img-text-box--two-bg,
+.services-content__img-text-box--three-bg,
+.services-content__img-text-box--four-bg {
+  background-size: 90% !important;
+  background-repeat: no-repeat !important;
+  background: #f7f7f7;
+}
+
 .services-content__img-text-box--one-bg {
   background-image: url(/img/services/csapagyak-bg.png);
-  background-size: cover;
+}
+
+.services-content__img-text-box--two-bg {
+  background-image: url(/img/services/golyosorsok-bg.png);
+}
+
+.services-content__img-text-box--three-bg {
+  background-image: url(/img/services/lineartechnika-bg.png);
+}
+
+.services-content__img-text-box--four-bg {
+  background-image: url(/img/services/egyedigyartas-bg.png);
 }
 
 .services-content__img-text-box {
-  padding: 2em;
+  padding: 2em 2em 0 2em;
+}
+
+.services-content__img-text-box__h3 {
+  margin-top: 1em;
 }
 
 .services-content__img-text-box__img {
@@ -304,6 +342,29 @@ ul {
 }
 
 /********************  Services formating end **********************/
+
+/********************  About formating start **********************/
+
+.about-content {
+  align-items: center;
+  padding: 7em 5em;
+}
+
+.about-content__text-box {
+  padding: 5em 3em;
+  width: 43em;
+  margin-right: -10em;
+}
+
+.about-content__img-box {
+  width: 50em;
+}
+
+.about-content__img-box__img {
+  height: 38em;
+}
+
+/********************  About formating end **********************/
 
 /********************  Blog formating start **********************/
 
