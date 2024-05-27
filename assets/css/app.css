@@ -24,7 +24,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(100deg, #20273f, #ff8639, #20273f);
+  background: linear-gradient(100deg, #ff8639, #ff8639, #ff8639);
   background-size: 180% 180%;
   width: 0;
   height: 25%;
@@ -147,7 +147,7 @@ ul {
 }
 
 .text-color {
-  color: #001647;
+  color: #20273f;
 }
 
 .text-color-w {
@@ -474,6 +474,15 @@ ul {
 
 .footer-content__text-box--formating {
   padding: 2.5em 3em 3em 3em;
+}
+
+.footer__bottom__text-box__p__link__img {
+  width: 6%;
+  margin-right: 0.7em;
+}
+
+.footer__bottom__text-box__p {
+  align-items: center;
 }
 /********************  Footer formating end **********************/
 

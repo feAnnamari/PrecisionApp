@@ -48,8 +48,12 @@ const sendEmail = async () => {
         <div class="footer-content__flex-box__blank-div"></div>
       </div>
 
-      <div class="footer-content__text-box footer-content__text-box--formating position-absolute z-100 bg-color-w">
-        <h6 class="footer-content__text-box__h6 text-transform-uppercase">
+      <div
+        class="footer-content__text-box footer-content__text-box--formating position-absolute z-100 bg-color-w"
+      >
+        <h6
+          class="footer-content__text-box__h6 text-transform-uppercase text-color"
+        >
           KÉRJEN ÁRAJÁNLATOT
         </h6>
         <div class="contact-form">
@@ -116,19 +120,97 @@ const sendEmail = async () => {
     </div>
     <div class="footer__bottom grid-4">
       <div class="footer__bottom__text-box">
-        <h6 class="footer__bottom__text-box__3 text-transform-uppercase">
+        <h6
+          class="footer__bottom__text-box__3 text-transform-uppercase text-color"
+        >
           MENÜ
         </h6>
       </div>
       <div class="footer__bottom__text-box">
-        <h6 class="footer__bottom__text-box__3 text-transform-uppercase">
+        <h6
+          class="footer__bottom__text-box__3 text-transform-uppercase text-color"
+        >
           INFORMÁCIÓK
         </h6>
+        <p class="footer__bottom__text-box__p">
+          <NuxtLink class="footer__bottom__text-box__p__NuxtLink text-color">
+            Adatvédelmi Szabályzat
+          </NuxtLink>
+        </p>
+        <p class="footer__bottom__text-box__p">
+          <NuxtLink class="footer__bottom__text-box__p__NuxtLink text-color">
+            Letölthető anyagok
+          </NuxtLink>
+        </p>
+        <p class="footer__bottom__text-box__p">
+          <NuxtLink class="footer__bottom__text-box__p__NuxtLink text-color">
+            Kapcsolat
+          </NuxtLink>
+        </p>
       </div>
       <div class="footer__bottom__text-box">
-        <h6 class="footer__bottom__text-box__3 text-transform-uppercase">
+        <h6
+          class="footer__bottom__text-box__3 text-transform-uppercase text-color"
+        >
           KAPCSOLAT
         </h6>
+        <p class="footer__bottom__text-box__p d-flex">
+          <NuxtImg
+            src="/img/footer/map.svg"
+            alt="Precision Bearing kft"
+            class="footer__bottom__text-box__p__link__img"
+            height="100%"
+          />
+          <a
+            class="footer__bottom__text-box__p__link text-color"
+            target="_blank"
+            href="https://www.google.com/maps/place/Sopronhorp%C3%A1cs,+D%C3%B3zsa+Gy%C3%B6rgy+u.+12,+9463/@47.4861838,16.7349177,17z/data=!3m1!4b1!4m6!3m5!1s0x476ea77d7e8f32e9:0x58840e1a7c9c57f1!8m2!3d47.4861802!4d16.7374926!16s%2Fg%2F11sqf5gvq_?authuser=0&entry=ttu"
+          >
+            9463 Sopronhorpács,Dózsa György utca 12.
+          </a>
+        </p>
+        <p class="footer__bottom__text-box__p d-flex">
+          <NuxtImg
+            src="/img/footer/mail.svg"
+            alt="Precision Bearing kft"
+            class="footer__bottom__text-box__p__link__img"
+            height="100%"
+          />
+          <a
+            class="footer__bottom__text-box__p__link text-color"
+            href="mailto:precisionbearingkft@gmail.com"
+          >
+            precisionbearingkft@gmail.com
+          </a>
+        </p>
+        <p class="footer__bottom__text-box__p d-flex">
+          <NuxtImg
+            src="/img/footer/mobile.svg"
+            alt="Precision Bearing kft"
+            class="footer__bottom__text-box__p__link__img"
+            height="100%"
+          />
+          <a
+            class="footer__bottom__text-box__p__link text-color"
+            href="tel:+36305397226"
+          >
+            +36 30 539-7226
+          </a>
+        </p>
+        <p class="footer__bottom__text-box__p d-flex">
+          <NuxtImg
+            src="/img/footer/mobile.svg"
+            alt="Precision Bearing kft"
+            class="footer__bottom__text-box__p__link__img"
+            height="100%"
+          />
+          <a
+            class="footer__bottom__text-box__p__link text-color"
+            href="tel:+36305397224"
+          >
+            +36 30 539-7224
+          </a>
+        </p>
       </div>
       <div class="footer__bottom__img-box t-end">
         <NuxtImg
