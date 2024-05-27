@@ -70,7 +70,8 @@ ul {
 .grid-2,
 .grid-3,
 .grid-4,
-.grid-7 {
+.grid-7,
+.grid-8 {
   display: grid;
 }
 
@@ -89,6 +90,10 @@ ul {
 
 .grid-7 {
   grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-8 {
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .z-100 {
@@ -196,6 +201,11 @@ ul {
 
 /********************  Identical instructions start **********************/
 
+.services-content,
+.blog-content {
+  padding: 5em;
+}
+
 .menu__item {
   font-size: 1rem;
 }
@@ -294,10 +304,6 @@ ul {
 
 /********************  Services formating start **********************/
 
-.services-content {
-  padding: 5em;
-}
-
 .services-content__h2 {
   margin-bottom: 1.5em;
 }
@@ -350,18 +356,25 @@ ul {
   padding: 7em 5em;
 }
 
-.about-content__text-box {
-  padding: 5em 3em;
-  width: 43em;
-  margin-right: -10em;
+.about-content__flex-box__blank-div {
+  width: 45%;
 }
 
 .about-content__img-box {
-  width: 50em;
+  width: 55%;
 }
 
 .about-content__img-box__img {
-  height: 38em;
+  height: 34em;
+}
+
+.about-content__text-box {
+  padding: 5em 3em;
+  width: 47%;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 5em;
 }
 
 /********************  About formating end **********************/
@@ -369,6 +382,24 @@ ul {
 /********************  Blog formating start **********************/
 
 /********************  Blog formating end **********************/
+
+/********************  Brands formating start **********************/
+.brands-content {
+  background: #ff8639;
+  padding: 1em 5em 5em 5em;
+}
+
+.brands-content__h5 {
+  margin-bottom: 5em;
+}
+
+.brands-content__img-content__img-box__img {
+  width: 70%;
+  height: 3em;
+  margin: auto;
+  display: block;
+}
+/********************  Brands formating end **********************/
 
 /********************  Footer formating start **********************/
 

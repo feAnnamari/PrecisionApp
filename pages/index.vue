@@ -125,9 +125,21 @@
     </div>
   </section>
   <section>
-    <div class="about-content d-flex">
-      <div class="about-content__text-box position-relative z-100 bg-color-w">
-        <h2 class="about-content__text-box__h2">Rólunk</h2>
+    <div class="about-content position-relative">
+      <div class="about-content__flex-box d-flex">
+        <div class="about-content__flex-box__blank-div"></div>
+        <div class="about-content__img-box">
+          <NuxtImg
+            src="/img/about/about.webp"
+            alt="Precision Bearing kft"
+            class="about-content__img-box__img"
+          />
+        </div>
+      </div>
+      <div class="about-content__text-box position-absolute z-100 bg-color-w">
+        <h2 class="about-content__text-box__h2 text-transform-uppercase">
+          Rólunk
+        </h2>
         <p class="about-content__text-box__p">
           Cégünk 2014-ben alakult azzal a céllal, hogy egy helyen kínáljunk
           minden szükséges alkatrészt és segítséget a szerszámgépek,
@@ -156,12 +168,84 @@
           </NuxtLink>
         </div>
       </div>
-      <div class="about-content__img-box">
-        <NuxtImg
-          src="/img/about/about.webp"
-          alt="Precision Bearing kft"
-          class="about-content__img-box__img"
-        />
+    </div>
+  </section>
+  <section>
+    <div class="blog-content">
+      <h4 class="text-transform-uppercase t-end">blog</h4>
+    </div>
+  </section>
+  <section>
+    <div class="brands-content">
+      <h5 class="brands-content__h5 text-transform-uppercase text-color-w">
+        ÁLTALUNK FORGALMAZOTT MÁRKÁK
+      </h5>
+      <div class="brands-content__img-content grid-8">
+
+        <div class="brands-content__img-content__img-box">
+          <NuxtImg
+            src="/img/references/fag.svg"
+            alt="Precision Bearing kft"
+            class="brands-content__img-content__img-box__img"
+          />
+        </div>
+
+        <div class="brands-content__img-content__img-box">
+          <NuxtImg
+            src="/img/references/gmn.svg"
+            alt="Precision Bearing kft"
+            class="brands-content__img-content__img-box__img"
+          />
+        </div>
+
+        <div class="brands-content__img-content__img-box">
+          <NuxtImg
+            src="/img/references/ibc.svg"
+            alt="Precision Bearing kft"
+            class="brands-content__img-content__img-box__img"
+          />
+        </div>
+
+        <div class="brands-content__img-content__img-box">
+          <NuxtImg
+            src="/img/references/gamet-logo-s.svg"
+            alt="Precision Bearing kft"
+            class="brands-content__img-content__img-box__img"
+          />
+        </div>
+
+        <div class="brands-content__img-content__img-box">
+          <NuxtImg
+            src="/img/references/INA_logo.svg"
+            alt="Precision Bearing kft"
+            class="brands-content__img-content__img-box__img"
+          />
+        </div>
+
+        <div class="brands-content__img-content__img-box">
+          <NuxtImg
+            src="/img/references/NSK_Logo.svg"
+            alt="Precision Bearing kft"
+            class="brands-content__img-content__img-box__img"
+          />
+        </div>
+
+        <div class="brands-content__img-content__img-box">
+          <NuxtImg
+            src="/img/references/the-timken-company-vector-logo.svg"
+            alt="Precision Bearing kft"
+            class="brands-content__img-content__img-box__img"
+          />
+        </div>
+
+        <div class="brands-content__img-content__img-box">
+          <NuxtImg
+            src="/img/references/UKF-Logo-rot.svg"
+            alt="Precision Bearing kft"
+            class="brands-content__img-content__img-box__img"
+          />
+        </div>
+
       </div>
     </div>
   </section>
