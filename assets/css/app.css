@@ -481,9 +481,35 @@ ul {
   margin-right: 0.7em;
 }
 
+.footer__bottom__text-box__footer-link-box {
+  flex-direction: column;
+}
+
+.footer__bottom__text-box__h6 {
+  margin-bottom: 1.7em;
+}
+
+.footer-link {
+  margin-bottom: 0.7em;
+}
+
 .footer__bottom__text-box__p {
+  margin: 0 0 0.7em 0;
+}
+
+.footer__bottom__text-box__p--formating,
+.footer__bottom__img-box {
   align-items: center;
 }
+
+.footer__bottom__img-box {
+justify-content: flex-end;
+}
+
+.footer__bottom__text-box__p--formating {
+  margin: 1em 0 1.5em 0;
+}
+
 /********************  Footer formating end **********************/
 
 /********************  Subpage formating start **********************/

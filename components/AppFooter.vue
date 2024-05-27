@@ -2,6 +2,13 @@
 import { ref } from 'vue'
 import { useNuxtApp } from '#app'
 
+const FooterLinks = [
+  { name: 'Galéria', path: '/galeria' },
+  { name: 'Rólunk', path: '/rolunk' },
+  { name: 'Ajánlatkérés', path: '/ajanlatkeres' },
+  { name: 'Szolgáltatások', path: '/szolgaltatasok' },
+]
+
 const nuxtApp = useNuxtApp()
 
 const form = ref({
@@ -121,14 +128,24 @@ const sendEmail = async () => {
     <div class="footer__bottom grid-4">
       <div class="footer__bottom__text-box">
         <h6
-          class="footer__bottom__text-box__3 text-transform-uppercase text-color"
+          class="footer__bottom__text-box__h6 text-transform-uppercase text-color"
         >
           MENÜ
         </h6>
+        <div class="footer__bottom__text-box__footer-link-box d-flex">
+          <NuxtLink
+            v-for="link in FooterLinks"
+            :key="link.path"
+            :to="link.path"
+            :class="['footer-link text-color']"
+          >
+            {{ link.name }}
+          </NuxtLink>
+        </div>
       </div>
       <div class="footer__bottom__text-box">
         <h6
-          class="footer__bottom__text-box__3 text-transform-uppercase text-color"
+          class="footer__bottom__text-box__h6 text-transform-uppercase text-color"
         >
           INFORMÁCIÓK
         </h6>
@@ -150,11 +167,13 @@ const sendEmail = async () => {
       </div>
       <div class="footer__bottom__text-box">
         <h6
-          class="footer__bottom__text-box__3 text-transform-uppercase text-color"
+          class="footer__bottom__text-box__h6 text-transform-uppercase text-color"
         >
           KAPCSOLAT
         </h6>
-        <p class="footer__bottom__text-box__p d-flex">
+        <p
+          class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex"
+        >
           <NuxtImg
             src="/img/footer/map.svg"
             alt="Precision Bearing kft"
@@ -169,7 +188,7 @@ const sendEmail = async () => {
             9463 Sopronhorpács,Dózsa György utca 12.
           </a>
         </p>
-        <p class="footer__bottom__text-box__p d-flex">
+        <p class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex">
           <NuxtImg
             src="/img/footer/mail.svg"
             alt="Precision Bearing kft"
@@ -183,7 +202,7 @@ const sendEmail = async () => {
             precisionbearingkft@gmail.com
           </a>
         </p>
-        <p class="footer__bottom__text-box__p d-flex">
+        <p class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex">
           <NuxtImg
             src="/img/footer/mobile.svg"
             alt="Precision Bearing kft"
@@ -197,7 +216,7 @@ const sendEmail = async () => {
             +36 30 539-7226
           </a>
         </p>
-        <p class="footer__bottom__text-box__p d-flex">
+        <p class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex">
           <NuxtImg
             src="/img/footer/mobile.svg"
             alt="Precision Bearing kft"
@@ -212,7 +231,7 @@ const sendEmail = async () => {
           </a>
         </p>
       </div>
-      <div class="footer__bottom__img-box t-end">
+      <div class="footer__bottom__img-box t-end d-flex">
         <NuxtImg
           src="/img/header/logo.png"
           alt="Precision Bearing kft"
