@@ -157,7 +157,7 @@
           Precision Bearing Kft.-nél megtalálja, amire szüksége van!
         </p>
         <div class="about-content__text-box__link-box">
-          <NuxtLink class="page-nuxt-link text-transform-uppercase">
+          <NuxtLink class="page-nuxt-link text-transform-uppercase text-color-w f-700">
             TOVÁBB
             <NuxtImg
               src="/img/about/about-arrow-r.svg"

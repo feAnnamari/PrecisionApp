@@ -38,7 +38,8 @@ button {
 }
 
 h2,
-h3 {
+h3,
+h6 {
   margin: 0;
 }
 
@@ -213,7 +214,10 @@ ul {
 .header-body__img,
 .header-body__video,
 .header-body__absolute-box,
-.about-content__img-box__img {
+.about-content__img-box__img,
+.footer-content__img-box__img,
+.form-group__input,
+.form-group__textarea {
   width: 100%;
 }
 
@@ -226,12 +230,65 @@ ul {
   align-items: center;
 }
 
-.about-content {
+.about-content,
+.footer-content__flex-box {
   background: #20273f;
 }
 
-.about-content__img-box__img {
+.about-content__img-box__img,
+.footer-content__img-box__img {
   object-fit: cover;
+}
+
+.about-content,
+.footer-content__flex-box {
+  padding: 7em 5em;
+}
+
+.about-content__flex-box__blank-div,
+.footer-content__flex-box__blank-div {
+  width: 45%;
+}
+
+.about-content__img-box,
+.footer-content__img-box {
+  width: 55%;
+}
+
+.about-content__img-box__img,
+.footer-content__img-box__img {
+  height: 36em;
+}
+
+.about-content__text-box,
+.footer-content__text-box {
+  padding: 5em 3em;
+  width: 47%;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.page-nuxt-link {
+  background: #1484e0;
+  padding: 0.5em 1em;
+}
+
+.page-nuxt-link__img {
+  width: 0.6em;
+  margin-left: 0.4em;
+}
+
+.page-nuxt-link__img--formating {
+  width: 0.9em;
+  margin-left: 0.5em;
+}
+
+.form-group__input,
+.form-group__textarea {
+  border: 0;
+  background: #f7f7f7;
+  margin-bottom: 0.5em;
+  padding: 1em;
 }
 
 /********************  Identical instructions end **********************/
@@ -351,30 +408,20 @@ ul {
 
 /********************  About formating start **********************/
 
-.about-content {
-  align-items: center;
-  padding: 7em 5em;
-}
-
-.about-content__flex-box__blank-div {
-  width: 45%;
-}
-
-.about-content__img-box {
-  width: 55%;
-}
-
-.about-content__img-box__img {
-  height: 34em;
-}
-
 .about-content__text-box {
-  padding: 5em 3em;
-  width: 47%;
-  left: 0;
-  transform: translateY(-50%);
-  top: 50%;
   left: 5em;
+}
+
+.about-content__text-box__h2 {
+  margin-bottom: 1em;
+}
+
+.about-content__text-box__p {
+  margin-bottom: 1.5em;
+}
+
+.about-content__text-box__link-box {
+  padding-top: 0.5em;
 }
 
 /********************  About formating end **********************/
@@ -384,6 +431,7 @@ ul {
 /********************  Blog formating end **********************/
 
 /********************  Brands formating start **********************/
+
 .brands-content {
   background: #ff8639;
   padding: 1em 5em 5em 5em;
@@ -399,10 +447,34 @@ ul {
   margin: auto;
   display: block;
 }
+
+.footer-content__text-box {
+  right: 5em;
+}
+
 /********************  Brands formating end **********************/
 
 /********************  Footer formating start **********************/
 
+.footer__bottom {
+  padding: 3.5em 5em;
+}
+
+.footer-content__text-box__h6 {
+  margin-bottom: 1.7em;
+}
+
+.footer__bottom__img-box__img {
+  width: 60%;
+}
+
+.footer-content__text-box__link-box {
+  margin-top: 1em;
+}
+
+.footer-content__text-box--formating {
+  padding: 2.5em 3em 3em 3em;
+}
 /********************  Footer formating end **********************/
 
 /********************  Subpage formating start **********************/
