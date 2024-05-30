@@ -109,19 +109,27 @@ const sendEmail = async () => {
               </div>
             </div>
           </form>
-        </div>
-        <div class="footer-content__text-box__link-box t-end">
-          <NuxtLink
-            class="page-nuxt-link text-transform-uppercase text-color-w f-700"
-          >
-            KÜLDÉS
-            <NuxtImg
-              src="/img/footer/footer-arrow-r.svg"
-              alt="Precision Bearing kft"
-              class="page-nuxt-link__img page-nuxt-link__img--formating"
-              height="100%"
-            />
-          </NuxtLink>
+          <div class="contact-form__link-box d-flex">
+            <div class="contact-form__link-box__text-box">
+              <p class="contact-form__link-box__text-box__p">
+                A Küldés gombra való kattintással automatikusan elfogadja az
+                Adatvédelmi Szabályzatot.
+              </p>
+            </div>
+            <div class="contact-form__link-box__NuxtLink">
+              <NuxtLink
+                class="page-nuxt-link text-transform-uppercase text-color-w f-700"
+              >
+                KÜLDÉS
+                <NuxtImg
+                  src="/img/footer/footer-arrow-r.svg"
+                  alt="Precision Bearing kft"
+                  class="page-nuxt-link__img page-nuxt-link__img--formating"
+                  height="100%"
+                />
+              </NuxtLink>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -188,7 +196,9 @@ const sendEmail = async () => {
             9463 Sopronhorpács,Dózsa György utca 12.
           </a>
         </p>
-        <p class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex">
+        <p
+          class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex"
+        >
           <NuxtImg
             src="/img/footer/mail.svg"
             alt="Precision Bearing kft"
@@ -202,7 +212,9 @@ const sendEmail = async () => {
             precisionbearingkft@gmail.com
           </a>
         </p>
-        <p class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex">
+        <p
+          class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex"
+        >
           <NuxtImg
             src="/img/footer/mobile.svg"
             alt="Precision Bearing kft"
@@ -216,7 +228,9 @@ const sendEmail = async () => {
             +36 30 539-7226
           </a>
         </p>
-        <p class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex">
+        <p
+          class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex"
+        >
           <NuxtImg
             src="/img/footer/mobile.svg"
             alt="Precision Bearing kft"

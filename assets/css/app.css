@@ -226,10 +226,6 @@ ul {
   width: 50%;
 }
 
-.header-body__absolute-box__nav-box {
-  align-items: center;
-}
-
 .about-content,
 .footer-content__flex-box {
   background: #20273f;
@@ -255,9 +251,12 @@ ul {
   width: 55%;
 }
 
-.about-content__img-box__img,
-.footer-content__img-box__img {
+.about-content__img-box__img {
   height: 36em;
+}
+
+.footer-content__img-box__img {
+  height: 39em;
 }
 
 .about-content__text-box,
@@ -289,6 +288,13 @@ ul {
   background: #f7f7f7;
   margin-bottom: 0.5em;
   padding: 1em;
+}
+
+.header-body__absolute-box__nav-box,
+.footer__bottom__text-box__p--formating,
+.footer__bottom__img-box,
+.contact-form__link-box {
+  align-items: center;
 }
 
 /********************  Identical instructions end **********************/
@@ -391,7 +397,7 @@ ul {
 }
 
 .services-content__img-text-box {
-  padding: 2em 2em 0 2em;
+  padding: 2em 2em 1em 2em;
 }
 
 .services-content__img-text-box__h3 {
@@ -402,6 +408,15 @@ ul {
   width: 9em;
   margin: auto;
   display: block;
+}
+
+.services-content__img-text-box__link-box {
+  bottom: 0.7em;
+  right: 7%;
+}
+
+.services-content__img-text-box__link-box__img {
+  width: 1.2em;
 }
 
 /********************  Services formating end **********************/
@@ -468,8 +483,9 @@ ul {
   width: 60%;
 }
 
-.footer-content__text-box__link-box {
+.contact-form__link-box {
   margin-top: 1em;
+  justify-content: space-between;
 }
 
 .footer-content__text-box--formating {
@@ -497,17 +513,16 @@ ul {
   margin: 0 0 0.7em 0;
 }
 
-.footer__bottom__text-box__p--formating,
 .footer__bottom__img-box {
-  align-items: center;
-}
-
-.footer__bottom__img-box {
-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .footer__bottom__text-box__p--formating {
   margin: 1em 0 1.5em 0;
+}
+
+.contact-form__link-box__text-box {
+  width: 70%;
 }
 
 /********************  Footer formating end **********************/

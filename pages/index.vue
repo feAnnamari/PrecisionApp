@@ -8,7 +8,7 @@
       </h2>
       <div class="grid-4">
         <div
-          class="services-content__img-text-box services-content__img-text-box--one-bg"
+          class="services-content__img-text-box services-content__img-text-box--one-bg position-relative"
         >
           <NuxtImg
             src="/img/services/csapagyak.svg"
@@ -23,7 +23,7 @@
             Fedezze fel prémium csapágyainkat: precíziós orsócsapágyak és
             különleges kerámiás csapágyak, minden igényt kielégítve!
           </p>
-          <div class="services-content__img-text-box__link-box t-end">
+          <div class="services-content__img-text-box__link-box position-absolute">
             <NuxtLink class="services-content__img-text-box__link-box__link">
               <NuxtImg
                 src="/img/services/r-arrow.svg"
@@ -36,7 +36,7 @@
         </div>
 
         <div
-          class="services-content__img-text-box services-content__img-text-box--two-bg"
+          class="services-content__img-text-box services-content__img-text-box--two-bg position-relative"
         >
           <NuxtImg
             src="/img/services/csapagyak.svg"
@@ -52,7 +52,7 @@
             világszerte ritkán elérhető golyós orsókat, minőségi garanciával és
             teljes körű gyártási szolgáltatásokkal!
           </p>
-          <div class="services-content__img-text-box__link-box t-end">
+          <div class="services-content__img-text-box__link-box position-absolute">
             <NuxtLink class="services-content__img-text-box__link-box__link">
               <NuxtImg
                 src="/img/services/r-arrow.svg"
@@ -65,7 +65,7 @@
         </div>
 
         <div
-          class="services-content__img-text-box services-content__img-text-box--three-bg"
+          class="services-content__img-text-box services-content__img-text-box--three-bg position-relative"
         >
           <NuxtImg
             src="/img/services/csapagyak.svg"
@@ -81,7 +81,7 @@
             japán gyártmányú lineáris vezetékekkel és kocsikkal, amelyeket német
             raktárunkból 1-3 napon belül szállítunk!
           </p>
-          <div class="services-content__img-text-box__link-box t-end">
+          <div class="services-content__img-text-box__link-box position-absolute">
             <NuxtLink class="services-content__img-text-box__link-box__link">
               <NuxtImg
                 src="/img/services/r-arrow.svg"
@@ -94,7 +94,7 @@
         </div>
 
         <div
-          class="services-content__img-text-box services-content__img-text-box--four-bg"
+          class="services-content__img-text-box services-content__img-text-box--four-bg position-relative"
         >
           <NuxtImg
             src="/img/services/csapagyak.svg"
@@ -110,7 +110,7 @@
             Üzemünkben kis és nagy sorozatban is gyártunk egyedi alkatrészeket,
             beleértve a golyós orsók végmegmunkálását is.
           </p>
-          <div class="services-content__img-text-box__link-box t-end">
+          <div class="services-content__img-text-box__link-box position-absolute">
             <NuxtLink class="services-content__img-text-box__link-box__link">
               <NuxtImg
                 src="/img/services/r-arrow.svg"
