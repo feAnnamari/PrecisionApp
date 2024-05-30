@@ -172,7 +172,7 @@
   </section>
   <section>
     <div class="blog-content">
-      <h4 class="text-transform-uppercase t-end text-color">blog</h4>
+      <h4 class="blog-content__h4 text-transform-uppercase t-end text-color">blog</h4>
     </div>
   </section>
   <section>

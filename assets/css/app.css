@@ -288,6 +288,7 @@ ul {
   background: #f7f7f7;
   margin-bottom: 0.5em;
   padding: 1em;
+  color: #9d9d9d;
 }
 
 .header-body__absolute-box__nav-box,
@@ -368,7 +369,7 @@ ul {
 /********************  Services formating start **********************/
 
 .services-content__h2 {
-  margin-bottom: 1.5em;
+  margin: 1em 0 1.7em 0;
 }
 
 .services-content__img-text-box--one-bg,
@@ -453,7 +454,7 @@ ul {
 }
 
 .brands-content__h5 {
-  margin-bottom: 5em;
+  margin: 1.3em 0 4em 0;
 }
 
 .brands-content__img-content__img-box__img {
@@ -502,7 +503,7 @@ ul {
 }
 
 .footer__bottom__text-box__h6 {
-  margin-bottom: 1.7em;
+  margin: 1em 0 1.7em 0;
 }
 
 .footer-link {
@@ -534,6 +535,64 @@ ul {
 /********************  Media formating start **********************/
 
 @media (min-width: 2200px) and (max-width: 2570px) {
+  p,
+  .footer-link {
+    font-size: 1.6rem;
+  }
+  .header-body__absolute-box__text-box__h1 {
+    font-size: 2.5rem;
+  }
+  .menu__item {
+    font-size: 1.4rem;
+  }
+  .services-content__h2,
+  .about-content__text-box__h2,
+  .blog-content__h4,
+  .brands-content__h5,
+  .footer__bottom__text-box__h6 {
+    font-size: 1.7rem;
+  }
+  .services-content__img-text-box__img {
+    width: 15em;
+  }
+  .services-content__img-text-box__h3,
+  .footer-content__text-box__h6 {
+    font-size: 2rem;
+  }
+  .services-content__img-text-box__link-box__img {
+    width: 1.7em;
+  }
+  .about-content__img-box__img {
+    height: 57em;
+  }
+  .page-nuxt-link {
+    font-size: 1.5rem;
+  }
+  .about-content__text-box {
+    padding: 9em 3em;
+  }
+  .about-content__text-box__h2 {
+    margin-bottom: 1.3em;
+  }
+  .brands-content__img-content__img-box__img {
+    height: 5em;
+  }
+  .brands-content {
+    padding: 1em 5em 10em 5em;
+  }
+  .form-group__input,
+  .form-group__textarea {
+    font-size: 1.4rem;
+  }
+  .footer-content__text-box--formating {
+    padding: 3.5em 3em 3em 3em;
+  }
+  .footer-content__text-box__h6 {
+    margin-bottom: 1em;
+  }
+  .footer-content__img-box__img {
+    height: 61em;
+  }
 }
 
 @media (min-width: 2000px) and (max-width: 2200px) {
