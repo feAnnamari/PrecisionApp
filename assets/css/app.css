@@ -600,18 +600,308 @@ ul {
 }
 
 @media (min-width: 2000px) and (max-width: 2200px) {
+  p,
+  .footer-link {
+    font-size: 1.4rem;
+  }
+  .header-body__absolute-box__text-box__h1 {
+    font-size: 2rem;
+  }
+  .menu__item {
+    font-size: 1.3rem;
+  }
+  .services-content__h2,
+  .about-content__text-box__h2,
+  .blog-content__h4,
+  .brands-content__h5,
+  .footer__bottom__text-box__h6 {
+    font-size: 1.5rem;
+  }
+  .services-content__img-text-box__img {
+    width: 13em;
+  }
+  .services-content__img-text-box__h3,
+  .footer-content__text-box__h6 {
+    font-size: 1.8rem;
+  }
+  .services-content__img-text-box__link-box__img {
+    width: 1.5em;
+  }
+  .about-content__img-box__img {
+    height: 50em;
+  }
+  .page-nuxt-link {
+    font-size: 1.3rem;
+  }
+  .about-content__text-box {
+    padding: 7em 3em;
+  }
+  .about-content__text-box__h2 {
+    margin-bottom: 1.3em;
+  }
+  .brands-content__img-content__img-box__img {
+    height: 5em;
+  }
+  .brands-content {
+    padding: 1em 5em 9em 5em;
+  }
+  .form-group__input,
+  .form-group__textarea {
+    font-size: 1.3rem;
+  }
+  .footer-content__text-box--formating {
+    padding: 3.5em 3em 3em 3em;
+  }
+  .footer-content__text-box__h6 {
+    margin-bottom: 1em;
+  }
+  .footer-content__img-box__img {
+    height: 57em;
+  }
 }
 
 @media (min-width: 1800px) and (max-width: 2000px) {
+  p,
+  .footer-link {
+    font-size: 1.3rem;
+  }
+  .header-body__absolute-box__text-box__h1 {
+    font-size: 1.7rem;
+  }
+  .menu__item {
+    font-size: 1.2rem;
+  }
+  .services-content__h2,
+  .about-content__text-box__h2,
+  .blog-content__h4,
+  .brands-content__h5,
+  .footer__bottom__text-box__h6 {
+    font-size: 1.4rem;
+  }
+  .services-content__img-text-box__img {
+    width: 12em;
+  }
+  .services-content__img-text-box__h3,
+  .footer-content__text-box__h6 {
+    font-size: 1.6rem;
+  }
+  .services-content__img-text-box__link-box__img {
+    width: 1.3em;
+  }
+  .about-content__img-box__img {
+    height: 44em;
+  }
+  .page-nuxt-link {
+    font-size: 1.2rem;
+  }
+  .about-content__text-box {
+    padding: 6em 3em;
+  }
+  .about-content__text-box__h2 {
+    margin-bottom: 1.3em;
+  }
+  .brands-content__img-content__img-box__img {
+    height: 4em;
+  }
+  .brands-content {
+    padding: 1em 5em 8em 5em;
+  }
+  .form-group__input,
+  .form-group__textarea {
+    font-size: 1.2rem;
+  }
+  .footer-content__text-box--formating {
+    padding: 3.5em 3em 3em 3em;
+  }
+  .footer-content__text-box__h6 {
+    margin-bottom: 1em;
+  }
+  .footer-content__img-box__img {
+    height: 53em;
+  }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
+  p,
+  .footer-link {
+    font-size: 1.1rem;
+  }
+  .header-body__absolute-box__text-box__h1 {
+    font-size: 1.5rem;
+  }
+  .menu__item {
+    font-size: 1rem;
+  }
+  .services-content__h2,
+  .about-content__text-box__h2,
+  .blog-content__h4,
+  .brands-content__h5,
+  .footer__bottom__text-box__h6 {
+    font-size: 1.2rem;
+  }
+  .services-content__img-text-box__img {
+    width: 11em;
+  }
+  .services-content__img-text-box__h3,
+  .footer-content__text-box__h6 {
+    font-size: 1.4rem;
+  }
+  .services-content__img-text-box__link-box__img {
+    width: 1.2em;
+  }
+  .about-content__img-box__img {
+    height: 38em;
+  }
+  .page-nuxt-link {
+    font-size: 1.1rem;
+  }
+  .about-content__text-box {
+    padding: 5em 3em;
+  }
+  .about-content__text-box__h2 {
+    margin-bottom: 1.3em;
+  }
+  .brands-content__img-content__img-box__img {
+    height: 4em;
+  }
+  .brands-content {
+    padding: 1em 5em 7em 5em;
+  }
+  .form-group__input,
+  .form-group__textarea {
+    font-size: 1rem;
+  }
+  .footer-content__text-box--formating {
+    padding: 3.5em 3em 3em 3em;
+  }
+  .footer-content__text-box__h6 {
+    margin-bottom: 1em;
+  }
+  .footer-content__img-box__img {
+    height: 46.5em;
+  }
 }
 
 @media (min-width: 1500px) and (max-width: 1600px) {
+  p,
+  .footer-link {
+    font-size: 1rem;
+  }
+  .header-body__absolute-box__text-box__h1 {
+    font-size: 1.3rem;
+  }
+  .menu__item {
+    font-size: 0.9rem;
+  }
+  .services-content__h2,
+  .about-content__text-box__h2,
+  .blog-content__h4,
+  .brands-content__h5,
+  .footer__bottom__text-box__h6 {
+    font-size: 1.2rem;
+  }
+  .services-content__img-text-box__img {
+    width: 10em;
+  }
+  .services-content__img-text-box__h3,
+  .footer-content__text-box__h6 {
+    font-size: 1.3rem;
+  }
+  .services-content__img-text-box__link-box__img {
+    width: 1.1em;
+  }
+  .about-content__img-box__img {
+    height: 36em;
+  }
+  .page-nuxt-link {
+    font-size: 1rem;
+  }
+  .about-content__text-box {
+    padding: 5em 3em;
+  }
+  .about-content__text-box__h2 {
+    margin-bottom: 1.3em;
+  }
+  .brands-content__img-content__img-box__img {
+    height: 3.5em;
+  }
+  .brands-content {
+    padding: 1em 5em 7em 5em;
+  }
+  .form-group__input,
+  .form-group__textarea {
+    font-size: 1rem;
+  }
+  .footer-content__text-box--formating {
+    padding: 3.5em 3em 3em 3em;
+  }
+  .footer-content__text-box__h6 {
+    margin-bottom: 1em;
+  }
+  .footer-content__img-box__img {
+    height: 45.5em;
+  }
 }
 
 @media (min-width: 1400px) and (max-width: 1500px) {
+  p,
+  .footer-link {
+    font-size: 1rem;
+  }
+  .header-body__absolute-box__text-box__h1 {
+    font-size: 1.3rem;
+  }
+  .menu__item {
+    font-size: 0.9rem;
+  }
+  .services-content__h2,
+  .about-content__text-box__h2,
+  .blog-content__h4,
+  .brands-content__h5,
+  .footer__bottom__text-box__h6 {
+    font-size: 1.2rem;
+  }
+  .services-content__img-text-box__img {
+    width: 10em;
+  }
+  .services-content__img-text-box__h3,
+  .footer-content__text-box__h6 {
+    font-size: 1.3rem;
+  }
+  .services-content__img-text-box__link-box__img {
+    width: 1.1em;
+  }
+  .about-content__img-box__img {
+    height: 36em;
+  }
+  .page-nuxt-link {
+    font-size: 1rem;
+  }
+  .about-content__text-box {
+    padding: 5em 3em;
+  }
+  .about-content__text-box__h2 {
+    margin-bottom: 1.3em;
+  }
+  .brands-content__img-content__img-box__img {
+    height: 3.5em;
+  }
+  .brands-content {
+    padding: 1em 5em 7em 5em;
+  }
+  .form-group__input,
+  .form-group__textarea {
+    font-size: 1rem;
+  }
+  .footer-content__text-box--formating {
+    padding: 3.5em 3em 3em 3em;
+  }
+  .footer-content__text-box__h6 {
+    margin-bottom: 1em;
+  }
+  .footer-content__img-box__img {
+    height: 45.5em;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
