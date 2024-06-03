@@ -1220,25 +1220,48 @@ ul {
   .footer-content__text-box {
     width: 60%;
   }
+  .footer-content__img-box__img {
+    height: 39em;
+  }
   .footer__bottom.grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 767px) {
+  p,
+  .footer-link {
+    font-size: 0.9rem;
+  }
   .header-body__absolute-box {
     top: unset;
     width: unset;
     transform: unset;
     position: relative;
+    background: #011547;
   }
   .menu__item {
     font-size: 1rem;
   }
   .header-content {
-    padding: 2em;
     flex-direction: row-reverse;
     align-items: center;
+    padding: 0 2em;
+    height: 13.5em;
+  }
+  .header-body__absolute-box {
+    padding: 0 0 0 2em;
+  }
+  .services-content,
+  .blog-content {
+    padding: 2em;
+  }
+  .about-content,
+  .footer-content__flex-box {
+    padding: 2em;
+  }
+  .footer__bottom {
+    padding: 3.5em 2em;
   }
   .header-content__logo-box,
   .header-content__nav-box {
@@ -1258,7 +1281,7 @@ ul {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 300px;
+    width: 17em;
     height: 100%;
     transition: right 0.7s ease;
     z-index: 1000;
@@ -1270,7 +1293,7 @@ ul {
     padding: 1.5em;
   }
   .menu__list__li {
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
   }
   .menu__item {
     padding-left: 0.5em;
@@ -1285,6 +1308,8 @@ ul {
     border: none;
     cursor: pointer;
     padding: 0.7em;
+    position: relative;
+    bottom: 7em;
   }
   .bar {
     height: 0.23em;
@@ -1304,13 +1329,30 @@ ul {
   .menu__list {
     align-items: flex-start;
   }
-  .menu__list {
+  .menu__list,
+  .about-content__flex-box,
+  .contact-form__link-box {
     flex-direction: column;
   }
   .header-content__logo-box__link__img {
-    width: 17em;
+    width: 10em;
+    margin-bottom: 1em;
   }
+  .header-body__absolute-box__text-box__h1 {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .header-body__absolute-box__text-box {
+    padding: 2em;
+    width: 100%;
+  }
+  .header-content__logo-box {
+    text-align: end;
+  }
+  .grid-2,
   .grid-3,
+  .grid-4,
+  .grid-6,
   .grid-7 {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
@@ -1322,6 +1364,57 @@ ul {
   }
   .menu__item {
     font-size: 1rem;
+  }
+  .services-content__h2,
+  .about-content__text-box__h2,
+  .blog-content__h4,
+  .brands-content__h5,
+  .footer__bottom__text-box__h6 {
+    font-size: 1.1rem;
+  }
+  .services-content__img-text-box__h3,
+  .footer-content__text-box__h6 {
+    font-size: 1.3rem;
+  }
+  .about-content__img-box,
+  .footer-content__img-box {
+    width: 100%;
+  }
+  .about-content__text-box {
+    left: 0;
+    height: 100%;
+  }
+  .about-content__img-box__img {
+    height: 13em;
+  }
+  .page-nuxt-link {
+    font-size: 0.9rem;
+  }
+  .brands-content {
+    padding: 1em 3em 7em 3em;
+  }
+  .brands-content__img-content__img-box__img {
+    height: 4em;
+  }
+  .footer-content__text-box {
+    right: 0;
+    height: 100%;
+  }
+  .contact-form__link-box {
+    justify-content: unset;
+    align-items: unset;
+  }
+  .about-content__text-box,
+  .footer-content__text-box {
+    width: 95%;
+    position: relative;
+    transform: unset;
+    top: unset;
+    padding: 5em 2em;
+    margin: auto;
+  }
+  .footer-content__img-box__img {
+    height: 39em;
   }
 }
 
