@@ -24,7 +24,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(100deg, #ff8639, #ff8639, #ff8639);
+  background: linear-gradient(100deg, #20273f, #20273f, #20273f);
   background-size: 180% 180%;
   width: 0;
   height: 25%;
@@ -450,6 +450,42 @@ ul {
 
 /********************  Blog formating start **********************/
 
+.accordion-content__header {
+  cursor: pointer;
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 30%;
+}
+
+.accordion-content__header__arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-is-open {
+  transform: rotate(-180deg);
+}
+
+.accordion-content__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  width: 70%;
+  top: 0;
+  right: 0;
+}
+
+.AccordionOpen {
+  max-height: 100%;
+  opacity: 1;
+  margin-bottom: 1em;
+  padding: 1em;
+  overflow: auto;
+}
+
+.accordion-content__header.red-background {
+  background-color: red;
+}
 /********************  Blog formating end **********************/
 
 /********************  Brands formating start **********************/
@@ -1261,7 +1297,7 @@ ul {
     padding: 2em;
   }
   .footer__bottom {
-    padding: 2.3em 2em;
+    padding: 0.5em 2em;
   }
   .header-content__logo-box,
   .header-content__nav-box {
@@ -1277,10 +1313,6 @@ ul {
     background-color: #fff;
   }
   .menu {
-    background-color: #001647;
-    border-left: 3px solid #fff
-  }
-  .menu {
     position: fixed;
     top: 0;
     right: -100%;
@@ -1288,6 +1320,8 @@ ul {
     height: 100%;
     transition: right 0.7s ease;
     z-index: 1000;
+    background-color: #001647;
+    border-left: 0.3em solid #fff;
   }
   .menu--open {
     right: 0;
