@@ -1,23 +1,23 @@
-import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHost, getRequestProtocol, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, setHeader, getHeader, appendHeader, getQuery as getQuery$1, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ofetch/dist/node.mjs';
-import destr from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/klona/dist/index.mjs';
-import { snakeCase } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/scule/dist/index.mjs';
-import defu, { defuFn, defu as defu$1, createDefu } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, hasProtocol, withHttps, withoutProtocol, withTrailingSlash, withLeadingSlash, withBase, withoutTrailingSlash, decodePath } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ufo/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unstorage/drivers/fs.mjs';
-import file_58_47_47_47Applications_47XAMPP_47xamppfiles_47htdocs_47biztosAlkuszApp_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js';
-import unstorage_47drivers_47fs_45lite from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unstorage/drivers/fs-lite.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/radix3/dist/index.mjs';
-import { toValue } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/vue/index.mjs';
+import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHost, getRequestProtocol, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, setHeader, getHeader, appendHeader, getQuery as getQuery$1, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ofetch/dist/node.mjs';
+import destr from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/klona/dist/index.mjs';
+import { snakeCase } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/scule/dist/index.mjs';
+import defu, { defuFn, defu as defu$1, createDefu } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, hasProtocol, withHttps, withoutProtocol, withTrailingSlash, withLeadingSlash, withBase, withoutTrailingSlash, decodePath } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unstorage/drivers/fs.mjs';
+import file_58_47_47_47Applications_47XAMPP_47xamppfiles_47htdocs_47PrecisionApp_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js';
+import unstorage_47drivers_47fs_45lite from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unstorage/drivers/fs-lite.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/radix3/dist/index.mjs';
+import { toValue } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/vue/index.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, resolve as resolve$1, isAbsolute } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/pathe/dist/index.mjs';
-import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ipx/dist/index.mjs';
+import { dirname, resolve as resolve$1, isAbsolute } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/pathe/dist/index.mjs';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ipx/dist/index.mjs';
 
 function getEnv(key, opts) {
   const envKey = snakeCase(key).toUpperCase();
@@ -59,7 +59,7 @@ function _expandFromEnv(value) {
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "a7e9ede0-f252-44c3-8916-976b710caf62"
+    "buildId": "6aa27278-3614-41f6-8d3e-72bd3735698b"
   }
 };
 
@@ -88,7 +88,7 @@ const _inlineRuntimeConfig = {
         "headers": {
           "Content-Type": "text/xml; charset=UTF-8",
           "Cache-Control": "public, max-age=600, must-revalidate",
-          "X-Sitemap-Prerendered": "2024-05-13T15:30:19.251Z"
+          "X-Sitemap-Prerendered": "2024-06-27T12:40:22.065Z"
         }
       },
       "/_nuxt/builds/meta/**": {
@@ -160,7 +160,7 @@ const _inlineRuntimeConfig = {
       {
         "_context": "system",
         "_priority": -15,
-        "name": "biztosAlkuszApp",
+        "name": "PrecisionApp",
         "env": "production"
       },
       {
@@ -183,7 +183,7 @@ const _inlineRuntimeConfig = {
     "alias": {},
     "fs": {
       "dir": [
-        "/Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/public"
+        "/Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/public"
       ]
     },
     "http": {
@@ -246,7 +246,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"/Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -258,12 +258,12 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('internal:nuxt:prerender', file_58_47_47_47Applications_47XAMPP_47xamppfiles_47htdocs_47biztosAlkuszApp_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"/Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/.nuxt/cache/nitro/prerender"}));
-storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"/Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/.data/kv"}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('internal:nuxt:prerender', file_58_47_47_47Applications_47XAMPP_47xamppfiles_47htdocs_47PrecisionApp_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"/Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/.nuxt/cache/nitro/prerender"}));
+storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"/Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Applications/XAMPP/xamppfiles/htdocs/PrecisionApp","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1072,7 +1072,7 @@ function defineNitroPlugin(def) {
 }
 
 const PRERENDER_NO_SSR_ROUTES = /* @__PURE__ */ new Set(["/index.html", "/200.html", "/404.html"]);
-const _EGrXyAr59T = defineNitroPlugin(async (nitroApp) => {
+const _jGl0HqmVM4 = defineNitroPlugin(async (nitroApp) => {
   nitroApp.hooks.hook("render:html", async (ctx, { event }) => {
     const routeOptions = getRouteRules(event);
     const isIsland = process.env.NUXT_COMPONENT_ISLANDS && event.path.startsWith("/__nuxt_island");
@@ -1088,7 +1088,7 @@ const _EGrXyAr59T = defineNitroPlugin(async (nitroApp) => {
 });
 
 const plugins = [
-  _EGrXyAr59T
+  _jGl0HqmVM4
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -1151,479 +1151,248 @@ const errorHandler = (async function errorhandler(error, event) {
 const assets = {
   "/200.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"7c26-fJkLce3mM48gYzpv6qzBm1CYsx0\"",
-    "mtime": "2024-05-13T15:30:24.735Z",
-    "size": 31782,
+    "etag": "\"5d63-EbH/sSvrJ6i+7IIUXgVvXulrgFo\"",
+    "mtime": "2024-06-27T12:40:26.257Z",
+    "size": 23907,
     "path": "../../.output/public/200.html"
   },
   "/404.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"7c26-fJkLce3mM48gYzpv6qzBm1CYsx0\"",
-    "mtime": "2024-05-13T15:30:24.735Z",
-    "size": 31782,
+    "etag": "\"5d63-EbH/sSvrJ6i+7IIUXgVvXulrgFo\"",
+    "mtime": "2024-06-27T12:40:26.257Z",
+    "size": 23907,
     "path": "../../.output/public/404.html"
   },
   "/_payload.json": {
     "type": "application/json",
-    "etag": "\"3e-LDcg2EOZxwnDVnWpfEiMlohczsc\"",
-    "mtime": "2024-05-13T15:30:24.800Z",
+    "etag": "\"3e-NhdSsqG2oxr488DdXHX2X3N4Bgs\"",
+    "mtime": "2024-06-27T12:40:26.387Z",
     "size": 62,
     "path": "../../.output/public/_payload.json"
   },
   "/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"e4c9-QuGsZUNSAHkWkadcFcOHGkbdwXg\"",
-    "mtime": "2024-05-13T15:30:24.735Z",
-    "size": 58569,
+    "etag": "\"b45c-Cgx5v7cz2/GXzPPuiGxhnmXHlfQ\"",
+    "mtime": "2024-06-27T12:40:26.264Z",
+    "size": 46172,
     "path": "../../.output/public/index.html"
   },
   "/__sitemap__/style.xsl": {
     "type": "application/xml",
     "etag": "\"174e-04KStjaK+j7dbchiMHqnnHF1ICc\"",
-    "mtime": "2024-05-13T15:30:24.503Z",
+    "mtime": "2024-06-27T12:40:26.168Z",
     "size": 5966,
     "path": "../../.output/public/__sitemap__/style.xsl"
   },
   "/ajanlatkeres/_payload.json": {
     "type": "application/json",
-    "etag": "\"3e-kJIfCnjnz5Uibhr9C1mQLDeh3tI\"",
-    "mtime": "2024-05-13T15:30:24.800Z",
+    "etag": "\"3e-NhdSsqG2oxr488DdXHX2X3N4Bgs\"",
+    "mtime": "2024-06-27T12:40:26.385Z",
     "size": 62,
     "path": "../../.output/public/ajanlatkeres/_payload.json"
   },
   "/ajanlatkeres/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"9380-meK5fBl2cmLI8atvh2u1njgtT4s\"",
-    "mtime": "2024-05-13T15:30:24.735Z",
-    "size": 37760,
+    "etag": "\"7e6d-KCyvo7s9nQiAPXjPpGF4GLoHeL4\"",
+    "mtime": "2024-06-27T12:40:26.257Z",
+    "size": 32365,
     "path": "../../.output/public/ajanlatkeres/index.html"
   },
-  "/gepjarmu-biztositas/_payload.json": {
+  "/galeria/_payload.json": {
     "type": "application/json",
-    "etag": "\"3e-LDcg2EOZxwnDVnWpfEiMlohczsc\"",
-    "mtime": "2024-05-13T15:30:24.800Z",
+    "etag": "\"3e-NhdSsqG2oxr488DdXHX2X3N4Bgs\"",
+    "mtime": "2024-06-27T12:40:26.277Z",
     "size": 62,
-    "path": "../../.output/public/gepjarmu-biztositas/_payload.json"
+    "path": "../../.output/public/galeria/_payload.json"
   },
-  "/gepjarmu-biztositas/index.html": {
+  "/galeria/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"acb7-FG/uZW0pPfYPS2yZOP3z2eruy3k\"",
-    "mtime": "2024-05-13T15:30:24.735Z",
-    "size": 44215,
-    "path": "../../.output/public/gepjarmu-biztositas/index.html"
+    "etag": "\"7e50-Rv67WmZMyGfK2cUnLYz7yT0X1mo\"",
+    "mtime": "2024-06-27T12:40:26.255Z",
+    "size": 32336,
+    "path": "../../.output/public/galeria/index.html"
   },
   "/kapcsolat/_payload.json": {
     "type": "application/json",
-    "etag": "\"3e-LDcg2EOZxwnDVnWpfEiMlohczsc\"",
-    "mtime": "2024-05-13T15:30:24.797Z",
+    "etag": "\"3e-NhdSsqG2oxr488DdXHX2X3N4Bgs\"",
+    "mtime": "2024-06-27T12:40:26.283Z",
     "size": 62,
     "path": "../../.output/public/kapcsolat/_payload.json"
   },
   "/kapcsolat/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"9371-pYMA6TRyuG0bfzxEw1abhpTuYF4\"",
-    "mtime": "2024-05-13T15:30:24.735Z",
-    "size": 37745,
+    "etag": "\"7e58-KXYaUgeJT6hm2l1/HL5cstK6jMY\"",
+    "mtime": "2024-06-27T12:40:26.255Z",
+    "size": 32344,
     "path": "../../.output/public/kapcsolat/index.html"
   },
-  "/dokumentumok/_payload.json": {
+  "/letoltheto-anyagok/_payload.json": {
     "type": "application/json",
-    "etag": "\"3e-kJIfCnjnz5Uibhr9C1mQLDeh3tI\"",
-    "mtime": "2024-05-13T15:30:24.800Z",
+    "etag": "\"3e-NhdSsqG2oxr488DdXHX2X3N4Bgs\"",
+    "mtime": "2024-06-27T12:40:26.283Z",
     "size": 62,
-    "path": "../../.output/public/dokumentumok/_payload.json"
+    "path": "../../.output/public/letoltheto-anyagok/_payload.json"
   },
-  "/dokumentumok/index.html": {
+  "/letoltheto-anyagok/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"942d-zgzGiT+qPQRCH7t6oYxtduc6904\"",
-    "mtime": "2024-05-13T15:30:24.735Z",
-    "size": 37933,
-    "path": "../../.output/public/dokumentumok/index.html"
+    "etag": "\"7e89-A9n0KgVprzqtH9w2w8PCydwgyQA\"",
+    "mtime": "2024-06-27T12:40:26.255Z",
+    "size": 32393,
+    "path": "../../.output/public/letoltheto-anyagok/index.html"
   },
-  "/karbejentes/_payload.json": {
+  "/rolunk/_payload.json": {
     "type": "application/json",
-    "etag": "\"3e-LDcg2EOZxwnDVnWpfEiMlohczsc\"",
-    "mtime": "2024-05-13T15:30:24.800Z",
+    "etag": "\"3e-NhdSsqG2oxr488DdXHX2X3N4Bgs\"",
+    "mtime": "2024-06-27T12:40:26.386Z",
     "size": 62,
-    "path": "../../.output/public/karbejentes/_payload.json"
+    "path": "../../.output/public/rolunk/_payload.json"
   },
-  "/karbejentes/index.html": {
+  "/rolunk/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"a26f-rBYJSlSk354Y6AFLxeOnV3aK0fY\"",
-    "mtime": "2024-05-13T15:30:24.735Z",
-    "size": 41583,
-    "path": "../../.output/public/karbejentes/index.html"
-  },
-  "/partnerek/_payload.json": {
-    "type": "application/json",
-    "etag": "\"3e-LDcg2EOZxwnDVnWpfEiMlohczsc\"",
-    "mtime": "2024-05-13T15:30:25.504Z",
-    "size": 62,
-    "path": "../../.output/public/partnerek/_payload.json"
-  },
-  "/partnerek/index.html": {
-    "type": "text/html; charset=utf-8",
-    "etag": "\"a65a-Cj3Su+HvrN5RP8DKmg5BRy5gX98\"",
-    "mtime": "2024-05-13T15:30:24.736Z",
-    "size": 42586,
-    "path": "../../.output/public/partnerek/index.html"
-  },
-  "/rendezvenyszolgalat/_payload.json": {
-    "type": "application/json",
-    "etag": "\"3e-LDcg2EOZxwnDVnWpfEiMlohczsc\"",
-    "mtime": "2024-05-13T15:30:25.502Z",
-    "size": 62,
-    "path": "../../.output/public/rendezvenyszolgalat/_payload.json"
-  },
-  "/rendezvenyszolgalat/index.html": {
-    "type": "text/html; charset=utf-8",
-    "etag": "\"a64f-sYTH67QSlQrJT5uiXzmT+6DiRKo\"",
-    "mtime": "2024-05-13T15:30:24.736Z",
-    "size": 42575,
-    "path": "../../.output/public/rendezvenyszolgalat/index.html"
-  },
-  "/szemelyes-tanacsadas/_payload.json": {
-    "type": "application/json",
-    "etag": "\"3e-LDcg2EOZxwnDVnWpfEiMlohczsc\"",
-    "mtime": "2024-05-13T15:30:25.496Z",
-    "size": 62,
-    "path": "../../.output/public/szemelyes-tanacsadas/_payload.json"
-  },
-  "/szemelyes-tanacsadas/index.html": {
-    "type": "text/html; charset=utf-8",
-    "etag": "\"a4e7-5Y/t7oc/UQJxnA+qN/ILQLBZnTc\"",
-    "mtime": "2024-05-13T15:30:24.736Z",
-    "size": 42215,
-    "path": "../../.output/public/szemelyes-tanacsadas/index.html"
+    "etag": "\"7e4b-TOEiIacX3Uz+vtAf7DAQn4O5SqY\"",
+    "mtime": "2024-06-27T12:40:26.257Z",
+    "size": 32331,
+    "path": "../../.output/public/rolunk/index.html"
   },
   "/szolgaltatasok/_payload.json": {
     "type": "application/json",
-    "etag": "\"3e-LDcg2EOZxwnDVnWpfEiMlohczsc\"",
-    "mtime": "2024-05-13T15:30:25.496Z",
+    "etag": "\"3e-NhdSsqG2oxr488DdXHX2X3N4Bgs\"",
+    "mtime": "2024-06-27T12:40:26.385Z",
     "size": 62,
     "path": "../../.output/public/szolgaltatasok/_payload.json"
   },
   "/szolgaltatasok/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"aee9-A6QcwxiZy5aF3xPOkvoHOoefmAc\"",
-    "mtime": "2024-05-13T15:30:24.735Z",
-    "size": 44777,
+    "etag": "\"7e75-gpwDvpUKZPNHXA6eKmxGqVv0VZA\"",
+    "mtime": "2024-06-27T12:40:26.259Z",
+    "size": 32373,
     "path": "../../.output/public/szolgaltatasok/index.html"
   },
-  "/tanulobiztositas/_payload.json": {
-    "type": "application/json",
-    "etag": "\"3e-LDcg2EOZxwnDVnWpfEiMlohczsc\"",
-    "mtime": "2024-05-13T15:30:25.502Z",
-    "size": 62,
-    "path": "../../.output/public/tanulobiztositas/_payload.json"
-  },
-  "/tanulobiztositas/index.html": {
-    "type": "text/html; charset=utf-8",
-    "etag": "\"a696-RY4jDmwCjoAt3H/oEM/XcoRuPOg\"",
-    "mtime": "2024-05-13T15:30:24.736Z",
-    "size": 42646,
-    "path": "../../.output/public/tanulobiztositas/index.html"
-  },
-  "/utasbiztositas/_payload.json": {
-    "type": "application/json",
-    "etag": "\"3e-LDcg2EOZxwnDVnWpfEiMlohczsc\"",
-    "mtime": "2024-05-13T15:30:25.496Z",
-    "size": 62,
-    "path": "../../.output/public/utasbiztositas/_payload.json"
-  },
-  "/utasbiztositas/index.html": {
-    "type": "text/html; charset=utf-8",
-    "etag": "\"a6b9-d0YhJYzPR7yeTGWONjt45pNL7b8\"",
-    "mtime": "2024-05-13T15:30:24.736Z",
-    "size": 42681,
-    "path": "../../.output/public/utasbiztositas/index.html"
-  },
-  "/_ipx/_/img/btn-arrow.svg": {
+  "/_ipx/_/img/footer/footer-arrow-r.svg": {
     "type": "image/svg+xml",
-    "etag": "\"bb-m827/cCffKTBNzLWjiJTX8uHPeI\"",
-    "mtime": "2024-05-13T15:30:25.474Z",
-    "size": 187,
-    "path": "../../.output/public/_ipx/_/img/btn-arrow.svg"
+    "etag": "\"bc-YnPfoqRss2bynRwV237bqxtwH9w\"",
+    "mtime": "2024-06-27T12:40:26.483Z",
+    "size": 188,
+    "path": "../../.output/public/_ipx/_/img/footer/footer-arrow-r.svg"
   },
-  "/_ipx/_/img/blog/blog.jpg": {
-    "type": "image/jpeg",
-    "etag": "\"51b2-MDoIxq73hWT7k3mc8n4M6zs1VhY\"",
-    "mtime": "2024-05-13T15:30:25.526Z",
-    "size": 20914,
-    "path": "../../.output/public/_ipx/_/img/blog/blog.jpg"
-  },
-  "/_ipx/_/img/blog/blog2.jpg": {
-    "type": "image/jpeg",
-    "etag": "\"514e-ofVJmY9YPaWDACOhZP0WGE1Y7K0\"",
-    "mtime": "2024-05-13T15:30:25.526Z",
-    "size": 20814,
-    "path": "../../.output/public/_ipx/_/img/blog/blog2.jpg"
-  },
-  "/_ipx/_/img/blog/blog3.jpg": {
-    "type": "image/jpeg",
-    "etag": "\"2dd3-9OtSdDXMAisHkaOankzR1qtN1Tw\"",
-    "mtime": "2024-05-13T15:30:25.526Z",
-    "size": 11731,
-    "path": "../../.output/public/_ipx/_/img/blog/blog3.jpg"
-  },
-  "/_ipx/_/img/footer/logo.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"86d76-i4qVgqixSx+sferOjfFt1G4q0h4\"",
-    "mtime": "2024-05-13T15:30:25.471Z",
-    "size": 552310,
-    "path": "../../.output/public/_ipx/_/img/footer/logo.svg"
-  },
-  "/_ipx/_/img/header/facebook.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"189-Xb21P+8amlvF6wlBooC4jUTqFKg\"",
-    "mtime": "2024-05-13T15:30:25.479Z",
-    "size": 393,
-    "path": "../../.output/public/_ipx/_/img/header/facebook.svg"
-  },
-  "/_ipx/_/img/header/logo.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"86b7f-gz8Qzsy61la82X7rjCj4XNwEYwQ\"",
-    "mtime": "2024-05-13T15:30:25.471Z",
-    "size": 551807,
-    "path": "../../.output/public/_ipx/_/img/header/logo.svg"
-  },
-  "/_ipx/_/img/header/mail.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"104-ZQfMo8anrWXHoFogpxNPhhfzXNg\"",
-    "mtime": "2024-05-13T15:30:25.486Z",
-    "size": 260,
-    "path": "../../.output/public/_ipx/_/img/header/mail.svg"
-  },
-  "/_ipx/_/img/header/mobile.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"418-h4TLxiOyR5f7Eps3ulkRoWRFmxY\"",
-    "mtime": "2024-05-13T15:30:25.494Z",
-    "size": 1048,
-    "path": "../../.output/public/_ipx/_/img/header/mobile.svg"
-  },
-  "/_ipx/_/img/partners/bottom.webp": {
+  "/_ipx/_/img/footer/footer.webp": {
     "type": "image/webp",
-    "etag": "\"109f4-df5HcG5rJHKXlpB+n/AEC3KbDpA\"",
-    "mtime": "2024-05-13T15:30:25.745Z",
-    "size": 68084,
-    "path": "../../.output/public/_ipx/_/img/partners/bottom.webp"
+    "etag": "\"5430-JruAR1uv8AGt2WOnY5V7V4fT+oQ\"",
+    "mtime": "2024-06-27T12:40:26.480Z",
+    "size": 21552,
+    "path": "../../.output/public/_ipx/_/img/footer/footer.webp"
   },
-  "/_ipx/_/img/partners/partners.svg": {
+  "/_ipx/_/img/footer/mail.svg": {
     "type": "image/svg+xml",
-    "etag": "\"921a-668/iE/HtUHeV5Cijym8CdAui2A\"",
-    "mtime": "2024-05-13T15:30:25.476Z",
-    "size": 37402,
-    "path": "../../.output/public/_ipx/_/img/partners/partners.svg"
+    "etag": "\"16c-/HbjZPvYRdGfq7J4Ez1Q4RBzkSk\"",
+    "mtime": "2024-06-27T12:40:26.482Z",
+    "size": 364,
+    "path": "../../.output/public/_ipx/_/img/footer/mail.svg"
   },
-  "/_ipx/_/img/partners/partners10.svg": {
+  "/_ipx/_/img/footer/map.svg": {
     "type": "image/svg+xml",
-    "etag": "\"2845-ASvn8AuoRUHrb+WXIjRbbgVQLVY\"",
-    "mtime": "2024-05-13T15:30:25.464Z",
-    "size": 10309,
-    "path": "../../.output/public/_ipx/_/img/partners/partners10.svg"
+    "etag": "\"3d6-yOLWNLrB5tOEWKcnTIiEFXYXlaE\"",
+    "mtime": "2024-06-27T12:40:26.481Z",
+    "size": 982,
+    "path": "../../.output/public/_ipx/_/img/footer/map.svg"
   },
-  "/_ipx/_/img/partners/partners11.svg": {
+  "/_ipx/_/img/footer/mobile.svg": {
     "type": "image/svg+xml",
-    "etag": "\"eca3-6d2+9B1Lc/FiZcSFMDqGrKjMe4w\"",
-    "mtime": "2024-05-13T15:30:25.468Z",
-    "size": 60579,
-    "path": "../../.output/public/_ipx/_/img/partners/partners11.svg"
+    "etag": "\"381-EHGEJK1ZKBwgy9DYWTonOcqlksA\"",
+    "mtime": "2024-06-27T12:40:26.482Z",
+    "size": 897,
+    "path": "../../.output/public/_ipx/_/img/footer/mobile.svg"
   },
-  "/_ipx/_/img/partners/partners12.svg": {
+  "/_ipx/_/img/header/logo.png": {
+    "type": "image/png",
+    "etag": "\"2286-kjRgruLdfgVvM5Yu5ZlBODx5ngY\"",
+    "mtime": "2024-06-27T12:40:26.480Z",
+    "size": 8838,
+    "path": "../../.output/public/_ipx/_/img/header/logo.png"
+  },
+  "/_ipx/_/img/references/INA_logo.svg": {
     "type": "image/svg+xml",
-    "etag": "\"3fd9-bZ929ob8La9de5AIebWkrBGJVqk\"",
-    "mtime": "2024-05-13T15:30:25.466Z",
-    "size": 16345,
-    "path": "../../.output/public/_ipx/_/img/partners/partners12.svg"
+    "etag": "\"556-hHwiCvDrvNiTQ1PzxU7ZAgeA42I\"",
+    "mtime": "2024-06-27T12:40:26.481Z",
+    "size": 1366,
+    "path": "../../.output/public/_ipx/_/img/references/INA_logo.svg"
   },
-  "/_ipx/_/img/partners/partners13.svg": {
+  "/_ipx/_/img/references/NSK_Logo.svg": {
     "type": "image/svg+xml",
-    "etag": "\"3b44-T08Lf2neKLZ0sefskYkrE6WHFCg\"",
-    "mtime": "2024-05-13T15:30:25.467Z",
-    "size": 15172,
-    "path": "../../.output/public/_ipx/_/img/partners/partners13.svg"
+    "etag": "\"2348-9FAfkQ2Cp0PPnOrgJMqiQ9jxMD0\"",
+    "mtime": "2024-06-27T12:40:26.480Z",
+    "size": 9032,
+    "path": "../../.output/public/_ipx/_/img/references/NSK_Logo.svg"
   },
-  "/_ipx/_/img/partners/partners14.svg": {
+  "/_ipx/_/img/references/UKF-Logo-rot.svg": {
     "type": "image/svg+xml",
-    "etag": "\"f7f5-8YUj0Yv5RBiTQ7xl9Uceek2bLuc\"",
-    "mtime": "2024-05-13T15:30:25.467Z",
-    "size": 63477,
-    "path": "../../.output/public/_ipx/_/img/partners/partners14.svg"
+    "etag": "\"1688-UjH4fHdAXNCnCpIlsQKf24AtVI0\"",
+    "mtime": "2024-06-27T12:40:26.481Z",
+    "size": 5768,
+    "path": "../../.output/public/_ipx/_/img/references/UKF-Logo-rot.svg"
   },
-  "/_ipx/_/img/partners/partners2.svg": {
+  "/_ipx/_/img/references/fag.svg": {
     "type": "image/svg+xml",
-    "etag": "\"6d2c-2NOjtvSGkmA+YVo6lx5IIllgeNU\"",
-    "mtime": "2024-05-13T15:30:25.467Z",
-    "size": 27948,
-    "path": "../../.output/public/_ipx/_/img/partners/partners2.svg"
+    "etag": "\"1dbd-+0Bt34EhzqmC2Zjo3j81DfxqIPI\"",
+    "mtime": "2024-06-27T12:40:26.480Z",
+    "size": 7613,
+    "path": "../../.output/public/_ipx/_/img/references/fag.svg"
   },
-  "/_ipx/_/img/partners/partners3.svg": {
+  "/_ipx/_/img/references/gamet-logo-s.svg": {
     "type": "image/svg+xml",
-    "etag": "\"36b9-+G4kPLy0g0UQw+YjcsdEXxvDOXc\"",
-    "mtime": "2024-05-13T15:30:25.469Z",
-    "size": 14009,
-    "path": "../../.output/public/_ipx/_/img/partners/partners3.svg"
+    "etag": "\"1e4a-4vZInOT3r4wXzI5KLc9uU24vvQw\"",
+    "mtime": "2024-06-27T12:40:26.481Z",
+    "size": 7754,
+    "path": "../../.output/public/_ipx/_/img/references/gamet-logo-s.svg"
   },
-  "/_ipx/_/img/partners/partners4.svg": {
+  "/_ipx/_/img/references/gmn.svg": {
     "type": "image/svg+xml",
-    "etag": "\"21c70-QLdEafd4YfmPDrPCQexmWRIpIYQ\"",
-    "mtime": "2024-05-13T15:30:25.469Z",
-    "size": 138352,
-    "path": "../../.output/public/_ipx/_/img/partners/partners4.svg"
+    "etag": "\"4b2-V6dN86Khfw/4M5A1hlA9IPay52w\"",
+    "mtime": "2024-06-27T12:40:26.480Z",
+    "size": 1202,
+    "path": "../../.output/public/_ipx/_/img/references/gmn.svg"
   },
-  "/_ipx/_/img/partners/partners5.svg": {
+  "/_ipx/_/img/references/ibc.svg": {
     "type": "image/svg+xml",
-    "etag": "\"2528-OisRdUqPKA+H/h1xD/Ys9uOgwu0\"",
-    "mtime": "2024-05-13T15:30:25.469Z",
-    "size": 9512,
-    "path": "../../.output/public/_ipx/_/img/partners/partners5.svg"
+    "etag": "\"52b83-iLLWD3C2oTRLXF3qvHQXqazazVU\"",
+    "mtime": "2024-06-27T12:40:26.480Z",
+    "size": 338819,
+    "path": "../../.output/public/_ipx/_/img/references/ibc.svg"
   },
-  "/_ipx/_/img/partners/partners6.svg": {
+  "/_ipx/_/img/references/the-timken-company-vector-logo.svg": {
     "type": "image/svg+xml",
-    "etag": "\"2817c-A3faEO0++I971lzmBddDyVeaitM\"",
-    "mtime": "2024-05-13T15:30:25.471Z",
-    "size": 164220,
-    "path": "../../.output/public/_ipx/_/img/partners/partners6.svg"
+    "etag": "\"1073-ZDrmomZJizoh3L/3oBhZuZkwVGM\"",
+    "mtime": "2024-06-27T12:40:26.480Z",
+    "size": 4211,
+    "path": "../../.output/public/_ipx/_/img/references/the-timken-company-vector-logo.svg"
   },
-  "/_ipx/_/img/partners/partners7.svg": {
+  "/_ipx/_/img/services/csapagyak.svg": {
     "type": "image/svg+xml",
-    "etag": "\"2ed3-CgO69/3QAk7Bv4dMmB/1gXjlqMQ\"",
-    "mtime": "2024-05-13T15:30:25.469Z",
-    "size": 11987,
-    "path": "../../.output/public/_ipx/_/img/partners/partners7.svg"
+    "etag": "\"61dd-BHeUl+6gcOZOKM/bnXI2A8Pj2Z4\"",
+    "mtime": "2024-06-27T12:40:26.480Z",
+    "size": 25053,
+    "path": "../../.output/public/_ipx/_/img/services/csapagyak.svg"
   },
-  "/_ipx/_/img/partners/partners8.svg": {
+  "/_ipx/_/img/services/r-arrow.svg": {
     "type": "image/svg+xml",
-    "etag": "\"2356-3PIT4qk5FjZiGhQbHU2r8uoYBEA\"",
-    "mtime": "2024-05-13T15:30:25.469Z",
-    "size": 9046,
-    "path": "../../.output/public/_ipx/_/img/partners/partners8.svg"
+    "etag": "\"25e-Dm/4sEfe430WRQ2Bx29jWusenWI\"",
+    "mtime": "2024-06-27T12:40:26.480Z",
+    "size": 606,
+    "path": "../../.output/public/_ipx/_/img/services/r-arrow.svg"
   },
-  "/_ipx/_/img/partners/partners9.svg": {
+  "/_ipx/_/img/about/about-arrow-r.svg": {
     "type": "image/svg+xml",
-    "etag": "\"8d58-NSSn2KXGk5Z1UbJaskiqxuXvQEg\"",
-    "mtime": "2024-05-13T15:30:25.468Z",
-    "size": 36184,
-    "path": "../../.output/public/_ipx/_/img/partners/partners9.svg"
+    "etag": "\"2a6-b07nDC+236d8yjvXIgiqiCIl7W8\"",
+    "mtime": "2024-06-27T12:40:26.481Z",
+    "size": 678,
+    "path": "../../.output/public/_ipx/_/img/about/about-arrow-r.svg"
   },
-  "/_ipx/_/img/partners/right-arrow.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"b8-48CzO2Hv52HuEIb0EDDNDRcZrLQ\"",
-    "mtime": "2024-05-13T15:30:25.479Z",
-    "size": 184,
-    "path": "../../.output/public/_ipx/_/img/partners/right-arrow.svg"
-  },
-  "/_ipx/_/img/services/gepjarmubiztositas.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"88e-7DjCixS8LPannl4PvJqdKYPcdQ0\"",
-    "mtime": "2024-05-13T15:30:25.472Z",
-    "size": 2190,
-    "path": "../../.output/public/_ipx/_/img/services/gepjarmubiztositas.svg"
-  },
-  "/_ipx/_/img/services/karbejelentes.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"e42-QOSQtP9f80Ma6U8XvFmYdQfy2Lg\"",
-    "mtime": "2024-05-13T15:30:25.480Z",
-    "size": 3650,
-    "path": "../../.output/public/_ipx/_/img/services/karbejelentes.svg"
-  },
-  "/_ipx/_/img/services/rendezveny_biztositas.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"729-nHJE0ac3HM4o09nNjdjNRckw+qw\"",
-    "mtime": "2024-05-13T15:30:25.480Z",
-    "size": 1833,
-    "path": "../../.output/public/_ipx/_/img/services/rendezveny_biztositas.svg"
-  },
-  "/_ipx/_/img/services/szemelyes_tanacsadas.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"883-mQTty8Yseis2kTTcuCzXDjkkQnU\"",
-    "mtime": "2024-05-13T15:30:25.520Z",
-    "size": 2179,
-    "path": "../../.output/public/_ipx/_/img/services/szemelyes_tanacsadas.svg"
-  },
-  "/_ipx/_/img/services/tanulobiztositas.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"6d7-arxf8rOAFaRaMsUQfTMvjSqbauo\"",
-    "mtime": "2024-05-13T15:30:25.480Z",
-    "size": 1751,
-    "path": "../../.output/public/_ipx/_/img/services/tanulobiztositas.svg"
-  },
-  "/_ipx/_/img/services/utazasbiztositas.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"b2f-wI9UvavLgYk3WqAfM33P8hCbF8k\"",
-    "mtime": "2024-05-13T15:30:25.480Z",
-    "size": 2863,
-    "path": "../../.output/public/_ipx/_/img/services/utazasbiztositas.svg"
-  },
-  "/_ipx/_/img/slider/about-r.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"ba-3DlD28QqwkWq/aHxhypF/gXBbE4\"",
-    "mtime": "2024-05-13T15:30:25.476Z",
-    "size": 186,
-    "path": "../../.output/public/_ipx/_/img/slider/about-r.svg"
-  },
-  "/_ipx/_/img/slider/arrow-l.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"e7-HH+m0uQWoYbfucixh0mE8T9N/TU\"",
-    "mtime": "2024-05-13T15:30:25.468Z",
-    "size": 231,
-    "path": "../../.output/public/_ipx/_/img/slider/arrow-l.svg"
-  },
-  "/_ipx/_/img/slider/arrow-r.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"e6-5hZ09/ed+vcPbSXlJ4x1wXleuBY\"",
-    "mtime": "2024-05-13T15:30:25.475Z",
-    "size": 230,
-    "path": "../../.output/public/_ipx/_/img/slider/arrow-r.svg"
-  },
-  "/_ipx/_/img/subpage-services/gepjarmubiztositas.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"98c-9oyL8GIIW7AyGPPRHGV66pT+hcY\"",
-    "mtime": "2024-05-13T15:30:25.471Z",
-    "size": 2444,
-    "path": "../../.output/public/_ipx/_/img/subpage-services/gepjarmubiztositas.svg"
-  },
-  "/_ipx/_/img/subpage-services/karbejelentes.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"f47-KGCk+4iTcnRjNbw2d/9RZ+37UcU\"",
-    "mtime": "2024-05-13T15:30:25.475Z",
-    "size": 3911,
-    "path": "../../.output/public/_ipx/_/img/subpage-services/karbejelentes.svg"
-  },
-  "/_ipx/_/img/subpage-services/rendezveny_biztositas.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"7eb-f3vgYS0t3YnHzuJ2mv8m/PaVUuY\"",
-    "mtime": "2024-05-13T15:30:25.526Z",
-    "size": 2027,
-    "path": "../../.output/public/_ipx/_/img/subpage-services/rendezveny_biztositas.svg"
-  },
-  "/_ipx/_/img/subpage-services/szemelyes_tanacsadas.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"916-NbxVXMBY8MurJ78giWhs3/9ZS8E\"",
-    "mtime": "2024-05-13T15:30:25.525Z",
-    "size": 2326,
-    "path": "../../.output/public/_ipx/_/img/subpage-services/szemelyes_tanacsadas.svg"
-  },
-  "/_ipx/_/img/subpage-services/tanulobiztositas.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"770-Odh/nac0Vul+aA8AtllweRiRa9I\"",
-    "mtime": "2024-05-13T15:30:25.526Z",
-    "size": 1904,
-    "path": "../../.output/public/_ipx/_/img/subpage-services/tanulobiztositas.svg"
-  },
-  "/_ipx/_/img/subpage-services/utazasbiztositas.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"bf9-JQj16Qn/a57i2EvKngpXoieaGg0\"",
-    "mtime": "2024-05-13T15:30:25.525Z",
-    "size": 3065,
-    "path": "../../.output/public/_ipx/_/img/subpage-services/utazasbiztositas.svg"
-  },
-  "/_ipx/f_webp/img/slider/slider.webp": {
+  "/_ipx/_/img/about/about.webp": {
     "type": "image/webp",
-    "etag": "\"151c0-9W3vbBs3GPaviX+q+I2FEiyNJsI\"",
-    "mtime": "2024-05-13T15:30:25.474Z",
-    "size": 86464,
-    "path": "../../.output/public/_ipx/f_webp/img/slider/slider.webp"
+    "etag": "\"dcb0-vahOhNcrsuboRJ4itlnolWyPl5E\"",
+    "mtime": "2024-06-27T12:40:26.495Z",
+    "size": 56496,
+    "path": "../../.output/public/_ipx/_/img/about/about.webp"
   }
 };
 
@@ -1717,7 +1486,7 @@ const _f4b49z = eventHandler((event) => {
   return readAsset(id);
 });
 
-const _QYJG1p = defineEventHandler(async (e) => {
+const _4tVCXI = defineEventHandler(async (e) => {
   if (e.context.siteConfig)
     return;
   const runtimeConfig = useRuntimeConfig(e);
@@ -1838,7 +1607,7 @@ function useSimpleSitemapRuntimeConfig(e) {
   return Object.freeze(clone);
 }
 
-const _uJCM4u = defineEventHandler(async (e) => {
+const _R1iojW = defineEventHandler(async (e) => {
   const fixPath = createSitePathResolver(e, { absolute: false, withBase: true });
   const { sitemapName: fallbackSitemapName, cacheMaxAgeSeconds, version, xslColumns, xslTips } = useSimpleSitemapRuntimeConfig();
   setHeader(e, "Content-Type", "application/xslt+xml");
@@ -2728,7 +2497,7 @@ async function createSitemap(e, definition, runtimeConfig) {
   return sitemap;
 }
 
-const _P3NzWK = defineEventHandler(async (e) => {
+const _47W8Nd = defineEventHandler(async (e) => {
   const runtimeConfig = useSimpleSitemapRuntimeConfig();
   const { sitemaps } = runtimeConfig;
   if ("index" in sitemaps) {
@@ -2737,7 +2506,7 @@ const _P3NzWK = defineEventHandler(async (e) => {
   return createSitemap(e, Object.values(sitemaps)[0], runtimeConfig);
 });
 
-const _2tKUKK = lazyEventHandler(() => {
+const _TWK73B = lazyEventHandler(() => {
   const opts = useRuntimeConfig().ipx || {};
   const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
   const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
@@ -2755,15 +2524,15 @@ const _2tKUKK = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
-const _lazy_aLS80g = () => import('./build/renderer.mjs');
+const _lazy_SIBl6n = () => import('./build/renderer.mjs');
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
-  { route: '', handler: _QYJG1p, lazy: false, middleware: true, method: undefined },
-  { route: '/__sitemap__/style.xsl', handler: _uJCM4u, lazy: false, middleware: false, method: undefined },
-  { route: '/sitemap.xml', handler: _P3NzWK, lazy: false, middleware: false, method: undefined },
-  { route: '/_ipx/**', handler: _2tKUKK, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_aLS80g, lazy: true, middleware: false, method: undefined }
+  { route: '', handler: _4tVCXI, lazy: false, middleware: true, method: undefined },
+  { route: '/__sitemap__/style.xsl', handler: _R1iojW, lazy: false, middleware: false, method: undefined },
+  { route: '/sitemap.xml', handler: _47W8Nd, lazy: false, middleware: false, method: undefined },
+  { route: '/_ipx/**', handler: _TWK73B, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_SIBl6n, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

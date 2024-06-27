@@ -1,0 +1,1 @@
+import{u as t,c as a,o as s,a as e}from"./mstFnsAz.js";const o={class:"supage-content position-relative"},c=e("h2",{class:"supage-content__h2 text-color"},"Galéria",-1),_=e("p",null,"Feltölés alatt...",-1),l=[c,_],u={__name:"galeria",setup(n){return t({title:"Galéria"}),(r,i)=>(s(),a("div",o,l))}};export{u as default};

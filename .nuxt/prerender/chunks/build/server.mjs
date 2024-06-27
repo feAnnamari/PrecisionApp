@@ -1,32 +1,36 @@
-import { version, ref, watchEffect, watch, getCurrentInstance, defineComponent, computed, h, provide, shallowReactive, inject, Suspense, nextTick, Transition, unref, resolveComponent, useSSRContext, createApp, effectScope, reactive, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, hasInjectionContext, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, defineAsyncComponent, mergeProps, withCtx, openBlock, createBlock, Fragment, createTextVNode, toDisplayString } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/vue/index.mjs';
-import { $fetch } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ofetch/dist/node.mjs';
-import { createHooks } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/hookable/dist/index.mjs';
-import { getContext } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unctx/dist/index.mjs';
-import { appendHeader, createError as createError$1, sanitizeStatusCode } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/h3/dist/index.mjs';
-import { getActiveHead } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin, composableNames } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/@unhead/shared/dist/index.mjs';
-import { RouterView, createMemoryHistory, createRouter, START_LOCATION, useRoute as useRoute$1 } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/vue-router/dist/vue-router.node.mjs';
-import { toRouteMatcher, createRouter as createRouter$1 } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/radix3/dist/index.mjs';
-import { defu } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/defu/dist/defu.mjs';
-import { encodeParam, hasProtocol, joinURL, parseURL, parseQuery, withLeadingSlash, withQuery, isScriptProtocol, withTrailingSlash, withoutTrailingSlash, encodePath } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ufo/dist/index.mjs';
-import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode, ssrRenderAttrs, ssrRenderClass, ssrRenderList, ssrInterpolate, ssrRenderAttr } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/vue/server-renderer/index.mjs';
+import { version, ref, watchEffect, watch, getCurrentInstance, defineComponent, computed, h, provide, shallowReactive, inject, Suspense, nextTick, Transition, createElementBlock, unref, resolveComponent, useSSRContext, createApp, effectScope, reactive, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, hasInjectionContext, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, defineAsyncComponent, mergeProps, withCtx, openBlock, createBlock, Fragment, createTextVNode, toDisplayString } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/vue/index.mjs';
+import { joinRelativeURL, hasProtocol, joinURL, parseURL, parseQuery, encodeParam, withLeadingSlash, withQuery, isScriptProtocol, withTrailingSlash, withoutTrailingSlash, encodePath } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ufo/dist/index.mjs';
+import { $fetch } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ofetch/dist/node.mjs';
+import { createHooks } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/hookable/dist/index.mjs';
+import { getContext } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unctx/dist/index.mjs';
+import { appendHeader, createError as createError$1, sanitizeStatusCode } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/h3/dist/index.mjs';
+import { getActiveHead } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin, composableNames } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/@unhead/shared/dist/index.mjs';
+import { RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/vue-router/dist/vue-router.node.mjs';
+import { toRouteMatcher, createRouter as createRouter$1 } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/radix3/dist/index.mjs';
+import { defu } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/defu/dist/defu.mjs';
+import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode, ssrRenderAttrs, ssrRenderClass, ssrRenderAttr, ssrRenderList, ssrInterpolate } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/vue/server-renderer/index.mjs';
 import { a as useRuntimeConfig$1 } from '../runtime.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/destr/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unenv/runtime/fetch/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/klona/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/scule/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ohash/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unstorage/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unstorage/drivers/fs.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/destr/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/klona/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/scule/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ohash/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unstorage/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unstorage/drivers/fs-lite.mjs';
 import 'node:fs';
 import 'node:url';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/pathe/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ipx/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/pathe/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ipx/dist/index.mjs';
 
 const appConfig = useRuntimeConfig$1().app;
 const baseURL = () => appConfig.baseURL;
+const publicAssetsURL = (...path) => {
+  const publicBase = appConfig.cdnURL || appConfig.baseURL;
+  return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
+};
 if (!globalThis.$fetch) {
   globalThis.$fetch = $fetch.create({
     baseURL: baseURL()
@@ -584,23 +588,15 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./ajanlatkeres-Bbe2No9m.mjs').then((m) => m.default || m)
+    component: () => import('./ajanlatkeres-Bnp5p6aE.mjs').then((m) => m.default || m)
   },
   {
-    name: "dokumentumok",
-    path: "/dokumentumok",
+    name: "galeria",
+    path: "/galeria",
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./dokumentumok-P0BbahJJ.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "gepjarmu-biztositas",
-    path: "/gepjarmu-biztositas",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./gepjarmu-biztositas-DJLHchIB.mjs').then((m) => m.default || m)
+    component: () => import('./galeria-DXiFp2P2.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -608,7 +604,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-Ckt5I8fE.mjs').then((m) => m.default || m)
+    component: () => import('./index-ntZ9X2BH.mjs').then((m) => m.default || m)
   },
   {
     name: "kapcsolat",
@@ -616,39 +612,23 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./kapcsolat-D6LcSdRJ.mjs').then((m) => m.default || m)
+    component: () => import('./kapcsolat-CPuppEPq.mjs').then((m) => m.default || m)
   },
   {
-    name: "karbejentes",
-    path: "/karbejentes",
+    name: "letoltheto-anyagok",
+    path: "/letoltheto-anyagok",
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./karbejentes-akJSYgzj.mjs').then((m) => m.default || m)
+    component: () => import('./letoltheto-anyagok-Bfpsd4UM.mjs').then((m) => m.default || m)
   },
   {
-    name: "partnerek",
-    path: "/partnerek",
+    name: "rolunk",
+    path: "/rolunk",
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./partnerek-B_EW-ppF.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "rendezvenyszolgalat",
-    path: "/rendezvenyszolgalat",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./rendezvenyszolgalat-DOTEdxpj.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "szemelyes-tanacsadas",
-    path: "/szemelyes-tanacsadas",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./szemelyes-tanacsadas-DSZlyT9w.mjs').then((m) => m.default || m)
+    component: () => import('./rolunk-C05Unk_L.mjs').then((m) => m.default || m)
   },
   {
     name: "szolgaltatasok",
@@ -656,23 +636,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./szolgaltatasok-B76mw4IF.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "tanulobiztositas",
-    path: "/tanulobiztositas",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./tanulobiztositas-B_7EHxN_.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "utasbiztositas",
-    path: "/utasbiztositas",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./utasbiztositas-CBv2-bwf.mjs').then((m) => m.default || m)
+    component: () => import('./szolgaltatasok-Bc_34SS-.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1047,6 +1011,216 @@ const plugins = [
   revive_payload_server_eJ33V7gbc6,
   components_plugin_KR1HBZs4kY
 ];
+const firstNonUndefined = (...args) => args.find((arg) => arg !== void 0);
+// @__NO_SIDE_EFFECTS__
+function defineNuxtLink(options) {
+  const componentName = options.componentName || "NuxtLink";
+  function resolveTrailingSlashBehavior(to, resolve) {
+    if (!to || options.trailingSlash !== "append" && options.trailingSlash !== "remove") {
+      return to;
+    }
+    if (typeof to === "string") {
+      return applyTrailingSlashBehavior(to, options.trailingSlash);
+    }
+    const path = "path" in to && to.path !== void 0 ? to.path : resolve(to).path;
+    const resolvedPath = {
+      ...to,
+      name: void 0,
+      // named routes would otherwise always override trailing slash behavior
+      path: applyTrailingSlashBehavior(path, options.trailingSlash)
+    };
+    return resolvedPath;
+  }
+  return defineComponent({
+    name: componentName,
+    props: {
+      // Routing
+      to: {
+        type: [String, Object],
+        default: void 0,
+        required: false
+      },
+      href: {
+        type: [String, Object],
+        default: void 0,
+        required: false
+      },
+      // Attributes
+      target: {
+        type: String,
+        default: void 0,
+        required: false
+      },
+      rel: {
+        type: String,
+        default: void 0,
+        required: false
+      },
+      noRel: {
+        type: Boolean,
+        default: void 0,
+        required: false
+      },
+      // Prefetching
+      prefetch: {
+        type: Boolean,
+        default: void 0,
+        required: false
+      },
+      noPrefetch: {
+        type: Boolean,
+        default: void 0,
+        required: false
+      },
+      // Styling
+      activeClass: {
+        type: String,
+        default: void 0,
+        required: false
+      },
+      exactActiveClass: {
+        type: String,
+        default: void 0,
+        required: false
+      },
+      prefetchedClass: {
+        type: String,
+        default: void 0,
+        required: false
+      },
+      // Vue Router's `<RouterLink>` additional props
+      replace: {
+        type: Boolean,
+        default: void 0,
+        required: false
+      },
+      ariaCurrentValue: {
+        type: String,
+        default: void 0,
+        required: false
+      },
+      // Edge cases handling
+      external: {
+        type: Boolean,
+        default: void 0,
+        required: false
+      },
+      // Slot API
+      custom: {
+        type: Boolean,
+        default: void 0,
+        required: false
+      }
+    },
+    setup(props, { slots }) {
+      const router = useRouter();
+      const config = /* @__PURE__ */ useRuntimeConfig();
+      const to = computed(() => {
+        const path = props.to || props.href || "";
+        return resolveTrailingSlashBehavior(path, router.resolve);
+      });
+      const isAbsoluteUrl = computed(() => typeof to.value === "string" && hasProtocol(to.value, { acceptRelative: true }));
+      const hasTarget = computed(() => props.target && props.target !== "_self");
+      const isExternal = computed(() => {
+        if (props.external) {
+          return true;
+        }
+        if (hasTarget.value) {
+          return true;
+        }
+        if (typeof to.value === "object") {
+          return false;
+        }
+        return to.value === "" || isAbsoluteUrl.value;
+      });
+      const prefetched = ref(false);
+      const el = void 0;
+      const elRef = void 0;
+      return () => {
+        var _a, _b;
+        if (!isExternal.value) {
+          const routerLinkProps = {
+            ref: elRef,
+            to: to.value,
+            activeClass: props.activeClass || options.activeClass,
+            exactActiveClass: props.exactActiveClass || options.exactActiveClass,
+            replace: props.replace,
+            ariaCurrentValue: props.ariaCurrentValue,
+            custom: props.custom
+          };
+          if (!props.custom) {
+            if (prefetched.value) {
+              routerLinkProps.class = props.prefetchedClass || options.prefetchedClass;
+            }
+            routerLinkProps.rel = props.rel || void 0;
+          }
+          return h(
+            resolveComponent("RouterLink"),
+            routerLinkProps,
+            slots.default
+          );
+        }
+        const href = typeof to.value === "object" ? ((_a = router.resolve(to.value)) == null ? void 0 : _a.href) ?? null : to.value && !props.external && !isAbsoluteUrl.value ? resolveTrailingSlashBehavior(joinURL(config.app.baseURL, to.value), router.resolve) : to.value || null;
+        const target = props.target || null;
+        const rel = firstNonUndefined(
+          // converts `""` to `null` to prevent the attribute from being added as empty (`rel=""`)
+          props.noRel ? "" : props.rel,
+          options.externalRelAttribute,
+          /*
+          * A fallback rel of `noopener noreferrer` is applied for external links or links that open in a new tab.
+          * This solves a reverse tabnapping security flaw in browsers pre-2021 as well as improving privacy.
+          */
+          isAbsoluteUrl.value || hasTarget.value ? "noopener noreferrer" : ""
+        ) || null;
+        if (props.custom) {
+          if (!slots.default) {
+            return null;
+          }
+          const navigate = () => navigateTo(href, { replace: props.replace, external: props.external });
+          return slots.default({
+            href,
+            navigate,
+            get route() {
+              if (!href) {
+                return void 0;
+              }
+              const url = parseURL(href);
+              return {
+                path: url.pathname,
+                fullPath: url.pathname,
+                get query() {
+                  return parseQuery(url.search);
+                },
+                hash: url.hash,
+                params: {},
+                name: void 0,
+                matched: [],
+                redirectedFrom: void 0,
+                meta: {},
+                href
+              };
+            },
+            rel,
+            target,
+            isExternal: isExternal.value,
+            isActive: false,
+            isExactActive: false
+          });
+        }
+        return h("a", { ref: el, href, rel, target }, (_b = slots.default) == null ? void 0 : _b.call(slots));
+      };
+    }
+  });
+}
+const __nuxt_component_0$2 = /* @__PURE__ */ defineNuxtLink(nuxtLinkDefaults);
+function applyTrailingSlashBehavior(to, trailingSlash) {
+  const normalizeFn = trailingSlash === "append" ? withTrailingSlash : withoutTrailingSlash;
+  const hasProtocolDifferentFromHttp = hasProtocol(to) && !to.startsWith("http");
+  if (hasProtocolDifferentFromHttp) {
+    return to;
+  }
+  return normalizeFn(to, true);
+}
 async function imageMeta(_ctx, url) {
   const meta = await _imageMeta(url).catch((err) => {
     console.error("Failed to get image meta for " + url, err + "");
@@ -1060,7 +1234,7 @@ async function imageMeta(_ctx, url) {
 }
 async function _imageMeta(url) {
   {
-    const imageMeta2 = await import('file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/image-meta/dist/index.mjs').then((r) => r.imageMeta);
+    const imageMeta2 = await import('file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/image-meta/dist/index.mjs').then((r) => r.imageMeta);
     const data = await fetch(url).then((res) => res.buffer());
     const metadata = imageMeta2(data);
     if (!metadata) {
@@ -1403,7 +1577,7 @@ const getImage = (src, { modifiers = {}, baseURL: baseURL2 } = {}, ctx) => {
 };
 const validateDomains = true;
 const supportsAlias = true;
-const ipxStaticRuntime$VIx2Y50Odf = /* @__PURE__ */ Object.freeze({
+const ipxStaticRuntime$L6rTUWGG8M = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   getImage,
   supportsAlias,
@@ -1432,7 +1606,7 @@ const imageOptions = {
   ]
 };
 imageOptions.providers = {
-  ["ipxStatic"]: { provider: ipxStaticRuntime$VIx2Y50Odf, defaults: {} }
+  ["ipxStatic"]: { provider: ipxStaticRuntime$L6rTUWGG8M, defaults: {} }
 };
 const useImage = () => {
   const config = /* @__PURE__ */ useRuntimeConfig();
@@ -1530,7 +1704,7 @@ const imgProps = {
   placeholder: { type: [Boolean, String, Number, Array], default: void 0 },
   placeholderClass: { type: String, default: void 0 }
 };
-const __nuxt_component_0$2 = defineComponent({
+const __nuxt_component_0$1 = defineComponent({
   name: "NuxtImg",
   props: imgProps,
   emits: ["load", "error"],
@@ -1611,246 +1785,57 @@ const __nuxt_component_0$2 = defineComponent({
     });
   }
 });
-const firstNonUndefined = (...args) => args.find((arg) => arg !== void 0);
-// @__NO_SIDE_EFFECTS__
-function defineNuxtLink(options) {
-  const componentName = options.componentName || "NuxtLink";
-  function resolveTrailingSlashBehavior(to, resolve) {
-    if (!to || options.trailingSlash !== "append" && options.trailingSlash !== "remove") {
-      return to;
-    }
-    if (typeof to === "string") {
-      return applyTrailingSlashBehavior(to, options.trailingSlash);
-    }
-    const path = "path" in to && to.path !== void 0 ? to.path : resolve(to).path;
-    const resolvedPath = {
-      ...to,
-      name: void 0,
-      // named routes would otherwise always override trailing slash behavior
-      path: applyTrailingSlashBehavior(path, options.trailingSlash)
-    };
-    return resolvedPath;
-  }
-  return defineComponent({
-    name: componentName,
-    props: {
-      // Routing
-      to: {
-        type: [String, Object],
-        default: void 0,
-        required: false
-      },
-      href: {
-        type: [String, Object],
-        default: void 0,
-        required: false
-      },
-      // Attributes
-      target: {
-        type: String,
-        default: void 0,
-        required: false
-      },
-      rel: {
-        type: String,
-        default: void 0,
-        required: false
-      },
-      noRel: {
-        type: Boolean,
-        default: void 0,
-        required: false
-      },
-      // Prefetching
-      prefetch: {
-        type: Boolean,
-        default: void 0,
-        required: false
-      },
-      noPrefetch: {
-        type: Boolean,
-        default: void 0,
-        required: false
-      },
-      // Styling
-      activeClass: {
-        type: String,
-        default: void 0,
-        required: false
-      },
-      exactActiveClass: {
-        type: String,
-        default: void 0,
-        required: false
-      },
-      prefetchedClass: {
-        type: String,
-        default: void 0,
-        required: false
-      },
-      // Vue Router's `<RouterLink>` additional props
-      replace: {
-        type: Boolean,
-        default: void 0,
-        required: false
-      },
-      ariaCurrentValue: {
-        type: String,
-        default: void 0,
-        required: false
-      },
-      // Edge cases handling
-      external: {
-        type: Boolean,
-        default: void 0,
-        required: false
-      },
-      // Slot API
-      custom: {
-        type: Boolean,
-        default: void 0,
-        required: false
-      }
-    },
-    setup(props, { slots }) {
-      const router = useRouter();
-      const config = /* @__PURE__ */ useRuntimeConfig();
-      const to = computed(() => {
-        const path = props.to || props.href || "";
-        return resolveTrailingSlashBehavior(path, router.resolve);
-      });
-      const isAbsoluteUrl = computed(() => typeof to.value === "string" && hasProtocol(to.value, { acceptRelative: true }));
-      const hasTarget = computed(() => props.target && props.target !== "_self");
-      const isExternal = computed(() => {
-        if (props.external) {
-          return true;
-        }
-        if (hasTarget.value) {
-          return true;
-        }
-        if (typeof to.value === "object") {
-          return false;
-        }
-        return to.value === "" || isAbsoluteUrl.value;
-      });
-      const prefetched = ref(false);
-      const el = void 0;
-      const elRef = void 0;
-      return () => {
-        var _a, _b;
-        if (!isExternal.value) {
-          const routerLinkProps = {
-            ref: elRef,
-            to: to.value,
-            activeClass: props.activeClass || options.activeClass,
-            exactActiveClass: props.exactActiveClass || options.exactActiveClass,
-            replace: props.replace,
-            ariaCurrentValue: props.ariaCurrentValue,
-            custom: props.custom
-          };
-          if (!props.custom) {
-            if (prefetched.value) {
-              routerLinkProps.class = props.prefetchedClass || options.prefetchedClass;
-            }
-            routerLinkProps.rel = props.rel || void 0;
-          }
-          return h(
-            resolveComponent("RouterLink"),
-            routerLinkProps,
-            slots.default
-          );
-        }
-        const href = typeof to.value === "object" ? ((_a = router.resolve(to.value)) == null ? void 0 : _a.href) ?? null : to.value && !props.external && !isAbsoluteUrl.value ? resolveTrailingSlashBehavior(joinURL(config.app.baseURL, to.value), router.resolve) : to.value || null;
-        const target = props.target || null;
-        const rel = firstNonUndefined(
-          // converts `""` to `null` to prevent the attribute from being added as empty (`rel=""`)
-          props.noRel ? "" : props.rel,
-          options.externalRelAttribute,
-          /*
-          * A fallback rel of `noopener noreferrer` is applied for external links or links that open in a new tab.
-          * This solves a reverse tabnapping security flaw in browsers pre-2021 as well as improving privacy.
-          */
-          isAbsoluteUrl.value || hasTarget.value ? "noopener noreferrer" : ""
-        ) || null;
-        if (props.custom) {
-          if (!slots.default) {
-            return null;
-          }
-          const navigate = () => navigateTo(href, { replace: props.replace, external: props.external });
-          return slots.default({
-            href,
-            navigate,
-            get route() {
-              if (!href) {
-                return void 0;
-              }
-              const url = parseURL(href);
-              return {
-                path: url.pathname,
-                fullPath: url.pathname,
-                get query() {
-                  return parseQuery(url.search);
-                },
-                hash: url.hash,
-                params: {},
-                name: void 0,
-                matched: [],
-                redirectedFrom: void 0,
-                meta: {},
-                href
-              };
-            },
-            rel,
-            target,
-            isExternal: isExternal.value,
-            isActive: false,
-            isExactActive: false
-          });
-        }
-        return h("a", { ref: el, href, rel, target }, (_b = slots.default) == null ? void 0 : _b.call(slots));
-      };
-    }
-  });
-}
-const __nuxt_component_0$1 = /* @__PURE__ */ defineNuxtLink(nuxtLinkDefaults);
-function applyTrailingSlashBehavior(to, trailingSlash) {
-  const normalizeFn = trailingSlash === "append" ? withTrailingSlash : withoutTrailingSlash;
-  const hasProtocolDifferentFromHttp = hasProtocol(to) && !to.startsWith("http");
-  if (hasProtocolDifferentFromHttp) {
-    return to;
-  }
-  return normalizeFn(to, true);
-}
+const _imports_0 = publicAssetsURL("/video/video.mp4");
 const _sfc_main$4 = {
   __name: "AppHeader",
   __ssrInlineRender: true,
   setup(__props) {
     const links = [
       { name: "Főoldal", path: "/" },
-      { name: "Partnerek", path: "/partnerek" },
-      { name: "Szolgáltatások", path: "/szolgaltatasok" },
-      { name: "Dokumentumok", path: "/dokumentumok" },
-      { name: "Ajánlatkérés", path: "/ajanlatkeres" },
+      { name: "Galéria", path: "/galeria" },
+      { name: "Rólunk", path: "/rolunk" },
       { name: "Kapcsolat", path: "/kapcsolat" },
-      { name: "Facebook", path: "/", imagePath: "/img/header/facebook.svg" }
+      { name: "Ajánlatkérés", path: "/ajanlatkeres" },
+      { name: "Szolgáltatások", path: "/szolgaltatasok" },
+      { name: "Letölthető anyagok", path: "/letoltheto-anyagok" }
     ];
     const isMenuOpen = ref(false);
+    ref(null);
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtImg = __nuxt_component_0$2;
-      const _component_NuxtLink = __nuxt_component_0$1;
-      _push(`<header${ssrRenderAttrs(mergeProps({ class: "header" }, _attrs))}><div class="header-content d-flex"><div class="logo-box header-content__logo-box"><a href="/" class="header-content__logo-box__link">`);
-      _push(ssrRenderComponent(_component_NuxtImg, {
-        src: "/img/header/logo.svg",
-        alt: "Biztos Alkuszom",
-        class: "header-content__logo-box__link__img",
-        height: "100%"
-      }, null, _parent));
-      _push(`</a></div><div class="nav-box header-content__nav-box d-flex"><button class="${ssrRenderClass([{ open: unref(isMenuOpen) }, "hamburger"])}"><div class="bar"></div><div class="bar"></div><div class="bar"></div></button><nav class="${ssrRenderClass({ "menu--open": unref(isMenuOpen), menu: true })}" id="menu"><ul id="menu__list" class="menu__list d-flex"><!--[-->`);
+      const _component_NuxtLink = __nuxt_component_0$2;
+      const _component_NuxtImg = __nuxt_component_0$1;
+      _push(`<header${ssrRenderAttrs(mergeProps({ class: "header" }, _attrs))}><div class="header-content position-relative z-100"><div class="logo-box header-content__logo-box">`);
+      _push(ssrRenderComponent(_component_NuxtLink, {
+        to: "/",
+        class: "header-content__logo-box__link"
+      }, {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(ssrRenderComponent(_component_NuxtImg, {
+              src: "/img/header/logo.png",
+              alt: "Precision Bearing kft",
+              class: "header-content__logo-box__link__img",
+              height: "100%"
+            }, null, _parent2, _scopeId));
+          } else {
+            return [
+              createVNode(_component_NuxtImg, {
+                src: "/img/header/logo.png",
+                alt: "Precision Bearing kft",
+                class: "header-content__logo-box__link__img",
+                height: "100%"
+              })
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`</div><button class="${ssrRenderClass([{ open: isMenuOpen.value }, "hamburger"])}"><div class="bar"></div><div class="bar"></div><div class="bar"></div></button></div><div class="header-body position-relative"><video class="header-body__video" autoplay loop muted playsinline width="1920" height="100%" preload="metadata"><source${ssrRenderAttr("src", _imports_0)} type="video/mp4"> Sajnáljuk, a böngésződ nem támogatja a videó elemet. </video><div class="header-body__absolute-box d-flex position-absolute"><div class="header-body__absolute-box__text-box"><h1 class="header-body__absolute-box__text-box__h1 text-transform-uppercase text-color-w f-700"> Lépjen be a zökkenőmentes és hatékony munka világába most! </h1><p class="header-body__absolute-box__text-box__p text-color-w f-400"> Szerezzen be minden szükséges eszközt és alkatrészt egyetlen helyről szerszámgépei, esztergagépei és marógépei javításához és felújításához! </p></div><div class="nav-box header-body__absolute-box__nav-box d-flex"><nav class="${ssrRenderClass({ "menu--open": isMenuOpen.value, menu: true })}" id="menu"><ul id="menu__list" class="menu__list d-flex"><!--[-->`);
       ssrRenderList(links, (link) => {
         _push(`<li class="menu__list__li">`);
         _push(ssrRenderComponent(_component_NuxtLink, {
           to: link.path,
-          class: ["menu__item text-color text-transform-uppercase"]
+          class: ["menu__item text-color-w f-500"]
         }, {
           default: withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
@@ -1882,19 +1867,7 @@ const _sfc_main$4 = {
         }, _parent));
         _push(`</li>`);
       });
-      _push(`<!--]--></ul></nav></div></div><div class="header-bottom d-flex"><div class="header-bottom__div"><h1 class="header-bottom__div__h1 text-color-w text-transform-uppercase"> ÁGOSTON GÁBOR - <span class="header-bottom__div__span">Az Ön alkusza</span></h1></div><div class="header-bottom__div header-bottom__div-linkbox"><a href="tel:+36302345866" class="header-bottom__div-linkbox__link text-color-w">`);
-      _push(ssrRenderComponent(_component_NuxtImg, {
-        src: "/img/header/mobile.svg",
-        alt: "Biztos Alkuszom",
-        class: "header-bottom__div-linkbox__link__img position-relative"
-      }, null, _parent));
-      _push(` 06 30 234 5866 </a><a href="mailto:biztos@alkuszom.info" class="header-bottom__div-linkbox__link text-color-w">`);
-      _push(ssrRenderComponent(_component_NuxtImg, {
-        src: "/img/header/mail.svg",
-        alt: "Biztos Alkuszom",
-        class: "header-bottom__div-linkbox__link__img header-bottom__div-linkbox__link__img--margin-left position-relative"
-      }, null, _parent));
-      _push(` biztos@alkuszom.info </a></div></div></header>`);
+      _push(`<!--]--></ul></nav></div></div></div></header>`);
     };
   }
 };
@@ -2044,62 +2017,87 @@ function hasChildrenRoutes(fork, newRoute, Component) {
   });
   return index < newRoute.matched.length - 1;
 }
+const clientOnlySymbol = Symbol.for("nuxt:client-only");
+defineComponent({
+  name: "ClientOnly",
+  inheritAttrs: false,
+  // eslint-disable-next-line vue/require-prop-types
+  props: ["fallback", "placeholder", "placeholderTag", "fallbackTag"],
+  setup(_, { slots, attrs }) {
+    const mounted = ref(false);
+    provide(clientOnlySymbol, true);
+    return (props) => {
+      var _a;
+      if (mounted.value) {
+        return (_a = slots.default) == null ? void 0 : _a.call(slots);
+      }
+      const slot = slots.fallback || slots.placeholder;
+      if (slot) {
+        return slot();
+      }
+      const fallbackStr = props.fallback || props.placeholder || "";
+      const fallbackTag = props.fallbackTag || props.placeholderTag || "span";
+      return createElementBlock(fallbackTag, attrs, fallbackStr);
+    };
+  }
+});
 const _sfc_main$3 = {
   __name: "AppFooter",
   __ssrInlineRender: true,
   setup(__props) {
-    const specialPaths = [
-      "/gepjarmu-biztositas",
-      "/utasbiztositas",
-      "/tanulobiztositas",
-      "/rendezvenyszolgalat",
-      "/karbejentes",
-      "/szemelyes-tanacsadas"
-    ];
-    const route = useRoute$1();
-    const isSpecialPage = computed(() => specialPaths.includes(route.path));
-    const links = [
-      { name: "Főoldal", path: "/" },
-      { name: "Partnerek", path: "/partnerek" },
-      { name: "Szolgáltatások", path: "/szolgaltatasok" },
-      { name: "Dokumentumok", path: "/dokumentumok" },
+    const FooterLinks = [
+      { name: "Galéria", path: "/galeria" },
+      { name: "Rólunk", path: "/rolunk" },
       { name: "Ajánlatkérés", path: "/ajanlatkeres" },
-      { name: "Kapcsolat", path: "/kapcsolat" }
+      { name: "Szolgáltatások", path: "/szolgaltatasok" }
     ];
     const form = ref({
-      firstname: "",
-      lastname: "",
+      name: "",
       email: "",
       phonenumber: "",
       message: ""
     });
+    ref(false);
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtImg = __nuxt_component_0$2;
-      const _component_NuxtLink = __nuxt_component_0$1;
-      _push(`<footer${ssrRenderAttrs(_attrs)}><div class="${ssrRenderClass([["footer-content", { "footer-bg-special": isSpecialPage.value }], "position-relative"])}"><div class="page__header page__header--right page__header page__header--right--format"><h3 class="page__header__h3 text-color-w text-transform-uppercase"> AJÁNLATKÉRÉS </h3></div><div class="footer-content__form bg-color-w"><h5 class="footer-content__form__h5 text-transform-uppercase text-center text-color"> VEGYÜK FEL A KAPCSOLATOT! </h5><div class="contact-form"><form><div class="contact-form__grid-box grid-2"><div class="form-group form-group--margin-right"><input class="form-group__input" placeholder="Vezetéknév *" type="text" id="firstname"${ssrRenderAttr("value", form.value.firstname)} required></div><div class="form-group form-group--margin-left"><input class="form-group__input" placeholder="Keresztnév *" type="text" id="lastname"${ssrRenderAttr("value", form.value.lastname)} required></div></div><div class="contact-form__grid-box grid-2"><div class="form-group form-group--margin-right"><input class="form-group__input" placeholder="E-mail cím *" type="email" id="email"${ssrRenderAttr("value", form.value.email)} required></div><div class="form-group form-group--margin-left"><input class="form-group__input" placeholder="Telefonszám" type="text" id="phonenumber"${ssrRenderAttr("value", form.value.phonenumber)} required></div></div><div class="form-group"><textarea rows="9" cols="300" class="form-group__textarea" placeholder="Milyen segítségre volna szüksége?" id="message" required>${ssrInterpolate(form.value.message)}</textarea></div><div class="contact-form__btn-box t-end"><button class="page-btn text-color-w" type="submit"> Küldés `);
+      const _component_NuxtImg = __nuxt_component_0$1;
+      const _component_NuxtLink = __nuxt_component_0$2;
+      _push(`<footer${ssrRenderAttrs(_attrs)}><div class="footer-content position-relative"><div class="footer-content__flex-box d-flex"><div class="footer-content__img-box">`);
       _push(ssrRenderComponent(_component_NuxtImg, {
-        class: "page-btn__img position-relative",
-        src: "/img/btn-arrow.svg",
-        alt: "Biztos Alkuszom"
+        src: "/img/footer/footer.webp",
+        alt: "Precision Bearing kft",
+        class: "footer-content__img-box__img"
       }, null, _parent));
-      _push(`</button></div></form></div></div><div class="${ssrRenderClass([[
-        "footer-content__link-box",
-        { "footer-content__link-box-bg-special": isSpecialPage.value }
-      ], "text-center"])}">`);
-      _push(ssrRenderComponent(_component_NuxtImg, {
-        src: "/img/footer/logo.svg",
-        alt: "Biztos Alkuszom",
-        class: "footer-content__link-box__img"
-      }, null, _parent));
-      _push(`<div class="footer-content__link-box__links d-flex"><!--[-->`);
-      ssrRenderList(links, (link) => {
+      _push(`</div><div class="footer-content__flex-box__blank-div"></div></div><div class="footer-content__text-box footer-content__text-box--formating position-absolute z-100 bg-color-w"><h6 class="footer-content__text-box__h6 text-transform-uppercase text-color"> KÉRJEN ÁRAJÁNLATOT </h6><div class="contact-form"><form><div class="contact-form"><div class="form-group"><input class="form-group__input" placeholder="Név" type="text" id="name"${ssrRenderAttr("value", form.value.name)} required></div><div class="form-group"><input class="form-group__input" placeholder="Email cím" type="email" id="email"${ssrRenderAttr("value", form.value.email)} required></div><div class="form-group"><input class="form-group__input" placeholder="Telefonszám" type="text" id="phonenumber"${ssrRenderAttr("value", form.value.phonenumber)} required></div><div class="form-group"><textarea rows="9" cols="300" class="form-group__textarea" placeholder="Üzenet..." id="message" required>${ssrInterpolate(form.value.message)}</textarea></div></div></form><div class="contact-form__link-box d-flex"><div class="contact-form__link-box__text-box"><p class="contact-form__link-box__text-box__p"> A Küldés gombra való kattintással automatikusan elfogadja az Adatvédelmi Szabályzatot. </p></div><div class="contact-form__link-box__NuxtLink">`);
+      _push(ssrRenderComponent(_component_NuxtLink, { class: "page-nuxt-link text-transform-uppercase text-color-w f-700" }, {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(` KÜLDÉS `);
+            _push2(ssrRenderComponent(_component_NuxtImg, {
+              src: "/img/footer/footer-arrow-r.svg",
+              alt: "Precision Bearing kft",
+              class: "page-nuxt-link__img page-nuxt-link__img--formating",
+              height: "100%"
+            }, null, _parent2, _scopeId));
+          } else {
+            return [
+              createTextVNode(" KÜLDÉS "),
+              createVNode(_component_NuxtImg, {
+                src: "/img/footer/footer-arrow-r.svg",
+                alt: "Precision Bearing kft",
+                class: "page-nuxt-link__img page-nuxt-link__img--formating",
+                height: "100%"
+              })
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`</div></div></div></div></div><div class="footer__bottom grid-4"><div class="footer__bottom__text-box"><h6 class="footer__bottom__text-box__h6 text-transform-uppercase text-color"> MENÜ </h6><div class="footer__bottom__text-box__footer-link-box d-flex"><!--[-->`);
+      ssrRenderList(FooterLinks, (link) => {
         _push(ssrRenderComponent(_component_NuxtLink, {
           key: link.path,
           to: link.path,
-          class: [
-            "footer-link",
-            { "footer-link-color-special": isSpecialPage.value }
-          ]
+          class: ["footer-link text-color"]
         }, {
           default: withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
@@ -2113,23 +2111,87 @@ const _sfc_main$3 = {
           _: 2
         }, _parent));
       });
-      _push(`<!--]--></div><div class="footer-content__link-box__DigitalSeed bg-color-w">`);
-      _push(ssrRenderComponent(_component_NuxtLink, {
-        class: "footer-content__link-box__DigitalSeed__Nuxtlink text-transform-uppercase",
-        to: "/"
-      }, {
+      _push(`<!--]--></div></div><div class="footer__bottom__text-box"><h6 class="footer__bottom__text-box__h6 text-transform-uppercase text-color"> INFORMÁCIÓK </h6><p class="footer__bottom__text-box__p">`);
+      _push(ssrRenderComponent(_component_NuxtLink, { class: "footer__bottom__text-box__p__NuxtLink text-color" }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(` DIGITAL SEED STUDIO - 2024`);
+            _push2(` Adatvédelmi Szabályzat `);
           } else {
             return [
-              createTextVNode(" DIGITAL SEED STUDIO - 2024")
+              createTextVNode(" Adatvédelmi Szabályzat ")
             ];
           }
         }),
         _: 1
       }, _parent));
-      _push(`</div></div></div></footer>`);
+      _push(`</p><p class="footer__bottom__text-box__p">`);
+      _push(ssrRenderComponent(_component_NuxtLink, {
+        to: "letoltheto-anyagok",
+        class: "footer__bottom__text-box__p__NuxtLink text-color"
+      }, {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(` Letölthető anyagok `);
+          } else {
+            return [
+              createTextVNode(" Letölthető anyagok ")
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`</p><p class="footer__bottom__text-box__p">`);
+      _push(ssrRenderComponent(_component_NuxtLink, {
+        to: "kapcsolat",
+        class: "footer__bottom__text-box__p__NuxtLink text-color"
+      }, {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(` Kapcsolat `);
+          } else {
+            return [
+              createTextVNode(" Kapcsolat ")
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`</p></div><div class="footer__bottom__text-box"><h6 class="footer__bottom__text-box__h6 text-transform-uppercase text-color"> KAPCSOLAT </h6><p class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex">`);
+      _push(ssrRenderComponent(_component_NuxtImg, {
+        src: "/img/footer/map.svg",
+        alt: "Precision Bearing kft",
+        class: "footer__bottom__text-box__p__link__img",
+        height: "100%"
+      }, null, _parent));
+      _push(`<a class="footer__bottom__text-box__p__link text-color" target="_blank" href="https://www.google.com/maps/place/Sopronhorp%C3%A1cs,+D%C3%B3zsa+Gy%C3%B6rgy+u.+12,+9463/@47.4861838,16.7349177,17z/data=!3m1!4b1!4m6!3m5!1s0x476ea77d7e8f32e9:0x58840e1a7c9c57f1!8m2!3d47.4861802!4d16.7374926!16s%2Fg%2F11sqf5gvq_?authuser=0&amp;entry=ttu"> 9463 Sopronhorpács,Dózsa György utca 12. </a></p><p class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex">`);
+      _push(ssrRenderComponent(_component_NuxtImg, {
+        src: "/img/footer/mail.svg",
+        alt: "Precision Bearing kft",
+        class: "footer__bottom__text-box__p__link__img",
+        height: "100%"
+      }, null, _parent));
+      _push(`<a class="footer__bottom__text-box__p__link text-color" href="mailto:precisionbearingkft@gmail.com"> precisionbearingkft@gmail.com </a></p><p class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex">`);
+      _push(ssrRenderComponent(_component_NuxtImg, {
+        src: "/img/footer/mobile.svg",
+        alt: "Precision Bearing kft",
+        class: "footer__bottom__text-box__p__link__img",
+        height: "100%"
+      }, null, _parent));
+      _push(`<a class="footer__bottom__text-box__p__link text-color" href="tel:+36305397226"> +36 30 539-7226 </a></p><p class="footer__bottom__text-box__p footer__bottom__text-box__p--formating d-flex">`);
+      _push(ssrRenderComponent(_component_NuxtImg, {
+        src: "/img/footer/mobile.svg",
+        alt: "Precision Bearing kft",
+        class: "footer__bottom__text-box__p__link__img",
+        height: "100%"
+      }, null, _parent));
+      _push(`<a class="footer__bottom__text-box__p__link text-color" href="tel:+36305397224"> +36 30 539-7224 </a></p></div><div class="footer__bottom__img-box t-end d-flex">`);
+      _push(ssrRenderComponent(_component_NuxtImg, {
+        src: "/img/header/logo.png",
+        alt: "Precision Bearing kft",
+        class: "footer__bottom__img-box__img",
+        height: "100%"
+      }, null, _parent));
+      _push(`</div></div></footer>`);
     };
   }
 };
@@ -2186,8 +2248,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-BEvbT0SN.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./error-500-BHZqTK2m.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-D4YgS8DV.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./error-500-CcJ6Cc-d.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -2267,5 +2329,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, __nuxt_component_0$1 as a, __nuxt_component_0$2 as b, entry$1 as default, useHead as u };
+export { _export_sfc as _, __nuxt_component_0$2 as a, __nuxt_component_0$1 as b, entry$1 as default, useHead as u };
 //# sourceMappingURL=server.mjs.map

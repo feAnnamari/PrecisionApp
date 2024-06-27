@@ -1,0 +1,1 @@
+import{u as e,c as o,o as a,a as t}from"./mstFnsAz.js";const s={class:"supage-content position-relative"},n=t("h2",{class:"supage-content__h2 text-color"},"Letölthető anyagok",-1),c=t("p",null,"Feltölés alatt...",-1),l=[n,c],p={__name:"letoltheto-anyagok",setup(_){return e({title:"Letölthető anyagok"}),(r,i)=>(a(),o("div",s,l))}};export{p as default};

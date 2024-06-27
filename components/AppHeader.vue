@@ -1,4 +1,6 @@
 <script setup>
+import { ref, onMounted } from 'vue'
+
 const links = [
   { name: 'Főoldal', path: '/' },
   { name: 'Galéria', path: '/galeria' },
@@ -10,20 +12,40 @@ const links = [
 ]
 
 const isMenuOpen = ref(false)
+const headerVideo = ref(null)
+
+onMounted(() => {
+  handleVideoPlayback()
+})
+
+const handleVideoPlayback = () => {
+  const video = headerVideo.value
+  if (video) {
+    video.muted = true 
+    video
+      .play()
+      .then(() => {
+        console.log('Video is playing')
+      })
+      .catch((error) => {
+        console.log('Video play failed:', error)
+      })
+  }
+}
 </script>
 
 <template>
   <header class="header">
     <div class="header-content position-relative z-100">
       <div class="logo-box header-content__logo-box">
-        <a href="/" class="header-content__logo-box__link">
+        <NuxtLink to="/" class="header-content__logo-box__link">
           <NuxtImg
             src="/img/header/logo.png"
             alt="Precision Bearing kft"
             class="header-content__logo-box__link__img"
             height="100%"
           />
-        </a>
+        </NuxtLink>
       </div>
       <button
         @click="isMenuOpen = !isMenuOpen"
@@ -47,9 +69,11 @@ const isMenuOpen = ref(false)
         autoplay
         loop
         muted
+        playsinline
         width="1920"
         height="100%"
         preload="metadata"
+        ref="headerVideo"
       >
         <source src="/video/video.mp4" type="video/mp4" />
         Sajnáljuk, a böngésződ nem támogatja a videó elemet.

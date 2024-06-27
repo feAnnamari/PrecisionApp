@@ -1,0 +1,1 @@
+import{u as e,c as s,o,a as t}from"./mstFnsAz.js";const a={class:"supage-content position-relative"},l=t("h2",{class:"supage-content__h2 text-color"},"Szolgáltatások",-1),c=t("p",null,"Feltölés alatt...",-1),_=[l,c],u={__name:"szolgaltatasok",setup(n){return e({title:"Szolgáltatások"}),(r,i)=>(o(),s("div",a,_))}};export{u as default};

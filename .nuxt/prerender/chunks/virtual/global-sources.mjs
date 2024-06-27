@@ -20,10 +20,7 @@ const sources = [
                 "loc": "/ajanlatkeres"
             },
             {
-                "loc": "/dokumentumok"
-            },
-            {
-                "loc": "/gepjarmu-biztositas"
+                "loc": "/galeria"
             },
             {
                 "loc": "/"
@@ -32,25 +29,13 @@ const sources = [
                 "loc": "/kapcsolat"
             },
             {
-                "loc": "/karbejentes"
+                "loc": "/letoltheto-anyagok"
             },
             {
-                "loc": "/partnerek"
-            },
-            {
-                "loc": "/rendezvenyszolgalat"
-            },
-            {
-                "loc": "/szemelyes-tanacsadas"
+                "loc": "/rolunk"
             },
             {
                 "loc": "/szolgaltatasok"
-            },
-            {
-                "loc": "/tanulobiztositas"
-            },
-            {
-                "loc": "/utasbiztositas"
             }
         ],
         "sourceType": "app"
@@ -65,40 +50,25 @@ const sources = [
         },
         "urls": [
             {
-                "loc": "/kapcsolat"
+                "loc": "/galeria"
             },
             {
-                "loc": "/karbejentes"
+                "loc": "/letoltheto-anyagok"
+            },
+            {
+                "loc": "/kapcsolat"
             },
             {
                 "loc": "/ajanlatkeres"
             },
             {
-                "loc": "/dokumentumok"
-            },
-            {
-                "loc": "/gepjarmu-biztositas"
-            },
-            {
-                "loc": "/"
-            },
-            {
                 "loc": "/szolgaltatasok"
             },
             {
-                "loc": "/szemelyes-tanacsadas"
+                "loc": "/rolunk"
             },
             {
-                "loc": "/utasbiztositas"
-            },
-            {
-                "loc": "/rendezvenyszolgalat"
-            },
-            {
-                "loc": "/tanulobiztositas"
-            },
-            {
-                "loc": "/partnerek"
+                "loc": "/"
             }
         ],
         "sourceType": "app"

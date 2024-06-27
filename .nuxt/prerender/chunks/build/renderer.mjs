@@ -1,31 +1,32 @@
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/h3/dist/index.mjs';
-import { stringify, uneval } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/devalue/index.js';
-import { joinURL, withoutTrailingSlash } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/vue/server-renderer/index.mjs';
-import { renderSSRHead } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/@unhead/ssr/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/h3/dist/index.mjs';
+import { stringify, uneval } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/devalue/index.js';
+import { joinURL, withoutTrailingSlash } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/vue/server-renderer/index.mjs';
+import { renderSSRHead } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/@unhead/ssr/dist/index.mjs';
 import { u as useNitroApp, a as useRuntimeConfig, b as useStorage, g as getRouteRules } from '../runtime.mjs';
-import { version, unref } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/vue/index.mjs';
-import { createServerHead as createServerHead$1 } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/@unhead/shared/dist/index.mjs';
-import viteNode_mjs from 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ofetch/dist/node.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/destr/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unenv/runtime/fetch/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/hookable/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/klona/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/scule/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/defu/dist/defu.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ohash/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unstorage/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unstorage/drivers/fs.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/unstorage/drivers/fs-lite.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/radix3/dist/index.mjs';
+import { version, unref } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/vue/index.mjs';
+import { createServerHead as createServerHead$1 } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/@unhead/shared/dist/index.mjs';
+import client_manifest_mjs from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs';
+import viteNode_mjs from 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ofetch/dist/node.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/destr/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/hookable/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/klona/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/scule/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/defu/dist/defu.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ohash/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unstorage/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/radix3/dist/index.mjs';
 import 'node:fs';
 import 'node:url';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/pathe/dist/index.mjs';
-import 'file:///Applications/XAMPP/xamppfiles/htdocs/biztosAlkuszApp/node_modules/ipx/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/pathe/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/PrecisionApp/node_modules/ipx/dist/index.mjs';
 
 function defineRenderHandler(handler) {
   return eventHandler(async (event) => {
@@ -125,7 +126,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = [];
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Személyre szabott biztosítási megoldások mindenkinek. Megbízható alkusz a biztosítási piacon."},{"name":"format-detection","content":"telephone=no"},{"hid":"robots","name":"robots","content":"index, follow"},{"http-equiv":"Content-Security-Policy","content":"\n            default-src 'self' https: data:;\n            img-src 'self' https: http: data:;\n            font-src 'self' https: data:;\n            style-src 'self' https: 'unsafe-inline';\n            script-src 'self' https: 'unsafe-inline' 'unsafe-eval';\n          "}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"},{"rel":"canonical","href":"https://www.alkuszom.info"},{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com"},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"}],"style":[],"script":[],"noscript":[],"title":"Biztos Alkuszom","htmlAttrs":{"lang":"hu"}};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Személyre szabott biztosítási megoldások mindenkinek. Megbízható alkusz a biztosítási piacon."},{"name":"format-detection","content":"telephone=no"},{"hid":"robots","name":"robots","content":"index, follow"},{"http-equiv":"Content-Security-Policy","content":"\n            default-src 'self' https: data:;\n            img-src 'self' https: http: data:;\n            font-src 'self' https: data:;\n            style-src 'self' https: 'unsafe-inline';\n            script-src 'self' https: 'unsafe-inline' 'unsafe-eval';\n          "}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"},{"rel":"canonical","href":"https://www.alkuszom.info"},{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com"},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap\""}],"style":[],"script":[],"noscript":[],"title":"Precision Bearing","htmlAttrs":{"lang":"hu"}};
 
 const appRootId = "__nuxt";
 
@@ -448,7 +449,8 @@ function splitPayload(ssrContext) {
 }
 
 const client_manifest = /*#__PURE__*/Object.freeze({
-  __proto__: null
+  __proto__: null,
+  default: client_manifest_mjs
 });
 
 const server = /*#__PURE__*/Object.freeze({

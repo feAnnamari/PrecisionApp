@@ -163,12 +163,15 @@ const sendEmail = async () => {
           </NuxtLink>
         </p>
         <p class="footer__bottom__text-box__p">
-          <NuxtLink class="footer__bottom__text-box__p__NuxtLink text-color">
+          <NuxtLink
+            to="letoltheto-anyagok"
+            class="footer__bottom__text-box__p__NuxtLink text-color"
+          >
             Letölthető anyagok
           </NuxtLink>
         </p>
         <p class="footer__bottom__text-box__p">
-          <NuxtLink class="footer__bottom__text-box__p__NuxtLink text-color">
+          <NuxtLink to="kapcsolat" class="footer__bottom__text-box__p__NuxtLink text-color">
             Kapcsolat
           </NuxtLink>
         </p>

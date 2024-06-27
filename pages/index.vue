@@ -199,7 +199,7 @@ const headerClass = (index: number) => {
           Precision Bearing Kft.-nél megtalálja, amire szüksége van!
         </p>
         <div class="about-content__text-box__link-box">
-          <NuxtLink
+          <NuxtLink to="rolunk"
             class="page-nuxt-link text-transform-uppercase text-color-w f-700"
           >
             TOVÁBB
@@ -219,7 +219,8 @@ const headerClass = (index: number) => {
       <h4 class="blog-content__h4 text-transform-uppercase t-end text-color">
         blog
       </h4>
-      <div class="accordion-content position-relative">
+      <p class="blog-content__p">Feltöltés alatt...</p>
+      <div class="accordion-content position-relative d-none">
         <div
           v-for="(item, index) in AccordionItems"
           :key="index"
