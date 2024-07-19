@@ -44,7 +44,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/image', '@nuxtjs/sitemap'],
+  modules: ['@nuxt/image', '@nuxtjs/sitemap', '@nuxt/content'],
 
   site: {
     url: 'https://www.alkuszom.info',
