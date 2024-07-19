@@ -53,7 +53,6 @@ const getFullImagePath = (filename) => `/img/services/${filename}`
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
     overflow: hidden;
 }
 
