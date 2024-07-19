@@ -36,7 +36,6 @@ const handleVideoPlayback = () => {
 
 <template>
   <header class="header">
-    <div class="gradient"></div>
     <div class="header-content position-relative z-100">
       <div class="logo-box header-content__logo-box">
         <NuxtLink to="/" class="header-content__logo-box__link">
@@ -49,6 +48,7 @@ const handleVideoPlayback = () => {
         <div class="bar"></div>
       </button>
     </div>
+
     <div class="header-body position-relative">
       <!-- <NuxtImg
         src="/img/slider/slider.jpg"
@@ -56,6 +56,7 @@ const handleVideoPlayback = () => {
         class="header-body__img"
         height="100%"
       /> -->
+      <div class="gradient" />
       <video class="header-body__video" autoplay loop muted playsinline width="1920" height="100%" preload="metadata" ref="headerVideo">
         <source src="/video/video.mp4" type="video/mp4" />
         Sajnáljuk, a böngésződ nem támogatja a videó elemet.
@@ -88,6 +89,7 @@ const handleVideoPlayback = () => {
           </nav>
         </div>
       </div>
+
     </div>
   </header>
 </template>
@@ -98,6 +100,5 @@ const handleVideoPlayback = () => {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 10;
 }
 </style>

@@ -1,3 +1,20 @@
+<script setup>
+const route = useRoute()
+const serviceName = route.params.serviceName.toLowerCase();
+
+const { data: service } = await useAsyncData('service', () =>
+    queryContent('szolgaltatasok', serviceName).findOne()
+);
+
+useHead({
+    title: 'Szolgáltatások' + service.title,
+})
+
+if (!service.value) {
+    throw createError({ statusCode: 404, message: 'Szolgáltatás nem található' })
+}
+</script>
+
 <template>
     <div v-if="service" class="supage-content position-relative">
         <h2 class="supage-content__h2 text-color">{{ service.title }}</h2>
@@ -8,19 +25,6 @@
         </NuxtLink>
     </div>
 </template>
-
-<script setup>
-const route = useRoute()
-const serviceName = route.params.serviceName.toLowerCase();
-
-const { data: service } = await useAsyncData('service', () =>
-    queryContent('szolgaltatasok', serviceName).findOne()
-);
-
-if (!service.value) {
-    throw createError({ statusCode: 404, message: 'Szolgáltatás nem található' })
-}
-</script>
 
 <style scoped>
 .go-back-button {
