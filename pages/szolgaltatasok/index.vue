@@ -1,0 +1,22 @@
+<script setup>
+import ServicesCards from '~/components/ServicesCards.vue';
+
+useHead({
+    title: 'Szolgáltatások',
+})
+</script>
+
+<template>
+    <div class="supage-content position-relative">
+        <h2 class="supage-content__h2 text-color pb">
+            SZOLGÁLTATÁSOK
+        </h2>
+        <ServicesCards />
+    </div>
+</template>
+
+<style scoped>
+.pb {
+    padding-bottom: 50px;
+}
+</style>
