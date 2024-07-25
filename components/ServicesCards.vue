@@ -79,13 +79,13 @@ const getFullImagePath = (filename) => `/img/services/${filename}`
 
 .services-content__card-icon {
     align-self: center;
-    height: 240px;
+    height: 10em;
     margin-bottom: 2rem;
     transition: transform 0.3s ease;
 }
 
 .services-content__card-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
     text-align: center;
     text-transform: uppercase;
