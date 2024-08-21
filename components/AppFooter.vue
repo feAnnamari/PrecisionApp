@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useNuxtApp } from '#app'
 
 const FooterLinks = [
-  { name: 'Galéria', path: '/galeria' },
+  // { name: 'Galéria', path: '/galeria' },
   { name: 'Rólunk', path: '/rolunk' },
   { name: 'Ajánlatkérés', path: '/ajanlatkeres' },
   { name: 'Szolgáltatások', path: '/szolgaltatasok' },
@@ -171,7 +171,10 @@ const sendEmail = async () => {
           </NuxtLink>
         </p>
         <p class="footer__bottom__text-box__p">
-          <NuxtLink to="kapcsolat" class="footer__bottom__text-box__p__NuxtLink text-color">
+          <NuxtLink
+            to="kapcsolat"
+            class="footer__bottom__text-box__p__NuxtLink text-color"
+          >
             Kapcsolat
           </NuxtLink>
         </p>
@@ -242,9 +245,9 @@ const sendEmail = async () => {
           />
           <a
             class="footer__bottom__text-box__p__link text-color"
-            href="tel:+36305397224"
+            href="tel:+36308424144"
           >
-            +36 30 539-7224
+            + 36 30 842-4144
           </a>
         </p>
       </div>
@@ -256,6 +259,12 @@ const sendEmail = async () => {
           height="100%"
         />
       </div>
+    </div>
+    <div class="footer__info-div">
+      <p class="footer__info-div__p text-color-w">
+        <strong>Cégjegyzék szám:</strong> 08-09-026749 Vezetve a Győri
+        Törvényszék cégbírósága nyilvántartásában.
+      </p>
     </div>
   </footer>
 </template>

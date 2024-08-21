@@ -231,7 +231,8 @@ ul {
 }
 
 .about-content,
-.footer-content__flex-box {
+.footer-content__flex-box,
+.footer__info-div {
   background: #20273f;
 }
 
@@ -522,6 +523,15 @@ ul {
   padding: 3.5em 5em;
 }
 
+.footer__info-div {
+  padding: 0 5em;
+}
+
+.footer__info-div__p {
+  margin: 0;
+  padding: 1em 0;
+}
+
 .footer-content__text-box__h6 {
   margin-bottom: 1.7em;
 }
@@ -601,6 +611,9 @@ ul {
   }
   .footer__bottom {
     padding: 3.5em 9em;
+  }
+  .footer__info-div {
+    padding: 0 9em;
   }
   .about-content,
   .footer-content__flex-box {
@@ -688,6 +701,9 @@ ul {
   }
   .footer__bottom {
     padding: 3.5em 9em;
+  }
+  .footer__info-div {
+    padding: 0 9em;
   }
   .about-content,
   .footer-content__flex-box {
@@ -779,6 +795,9 @@ ul {
   .footer__bottom {
     padding: 3.5em 8em;
   }
+  .footer__info-div {
+    padding: 0 8em;
+  }
   .about-content,
   .footer-content__flex-box {
     padding: 7em 8em;
@@ -868,6 +887,9 @@ ul {
   }
   .footer__bottom {
     padding: 3.5em 7em;
+  }
+  .footer__info-div {
+    padding: 0 7em;
   }
   .about-content,
   .footer-content__flex-box {
@@ -959,6 +981,9 @@ ul {
   .footer__bottom {
     padding: 3.5em 7em;
   }
+  .footer__info-div {
+    padding: 0 7em;
+  }
   .about-content,
   .footer-content__flex-box {
     padding: 7em 7em;
@@ -1048,6 +1073,9 @@ ul {
   }
   .footer__bottom {
     padding: 3.5em 7em;
+  }
+  .footer__info-div {
+    padding: 0 7em;
   }
   .about-content,
   .footer-content__flex-box {
@@ -1204,6 +1232,9 @@ ul {
   .footer__bottom {
     padding: 3.5em 4em;
   }
+  .footer__info-div {
+    padding: 0 4em;
+  }
   .header-body__absolute-box__text-box__h1 {
     font-size: 1rem;
   }
@@ -1296,6 +1327,9 @@ ul {
   }
   .footer__bottom {
     padding: 3.5em 3em;
+  }
+  .footer__info-div {
+    padding: 0 3em;
   }
   .header-content__logo-box,
   .header-content__nav-box {
@@ -1468,6 +1502,9 @@ ul {
   }
   .footer__bottom {
     padding: 0.5em 2em;
+  }
+  .footer__info-div {
+    padding: 0 2em;
   }
   .header-content__logo-box,
   .header-content__nav-box {

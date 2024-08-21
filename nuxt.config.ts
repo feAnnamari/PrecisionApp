@@ -28,6 +28,7 @@ export default defineNuxtConfig({
             font-src 'self' https: data:;
             style-src 'self' https: 'unsafe-inline';
             script-src 'self' https: 'unsafe-inline' 'unsafe-eval';
+            connect-src 'self' ws://localhost:4000;
           `,
         },
       ],
