@@ -20,7 +20,7 @@ onMounted(() => {
   handleVideoPlayback()
 
   router.afterEach((to, from) => {
-    const scrollDelay = 1000; 
+    const scrollDelay = 1000
 
     if (to.path === '/galeria') {
       setTimeout(() => {
@@ -74,7 +74,6 @@ const scrollToSection = (sectionId) => {
     })
   }
 }
-
 </script>
 
 <template>

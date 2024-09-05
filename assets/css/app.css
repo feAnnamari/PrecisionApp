@@ -121,6 +121,10 @@ ul {
   text-transform: uppercase;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .t-end {
   text-align: end;
 }
@@ -243,6 +247,10 @@ ul {
 
 .about-content,
 .footer-content__flex-box {
+  padding: 7em 5em;
+}
+
+.supage-content {
   padding: 7em 5em;
 }
 
@@ -590,6 +598,11 @@ ul {
   padding: 5em;
 }
 
+.supage-content__p {
+  width: 80%;
+  line-height: 1.5em;
+}
+
 /********************  Subpage formating formating end **********************/
 
 /********************  Media formating start **********************/
@@ -617,6 +630,9 @@ ul {
   }
   .about-content,
   .footer-content__flex-box {
+    padding: 7em 9em;
+  }
+  .supage-content {
     padding: 7em 9em;
   }
   .about-content__text-box {
@@ -707,6 +723,9 @@ ul {
   }
   .about-content,
   .footer-content__flex-box {
+    padding: 7em 9em;
+  }
+  .supage-content {
     padding: 7em 9em;
   }
   .about-content__text-box {
@@ -802,6 +821,9 @@ ul {
   .footer-content__flex-box {
     padding: 7em 8em;
   }
+  .supage-content {
+    padding: 7em 8em;
+  }
   .about-content__text-box {
     left: 8em;
   }
@@ -893,6 +915,9 @@ ul {
   }
   .about-content,
   .footer-content__flex-box {
+    padding: 7em 7em;
+  }
+  .supage-content {
     padding: 7em 7em;
   }
   .about-content__text-box {
@@ -988,6 +1013,9 @@ ul {
   .footer-content__flex-box {
     padding: 7em 7em;
   }
+  .supage-content {
+    padding: 7em 9em;
+  }
   .about-content__text-box {
     left: 7em;
   }
@@ -1079,6 +1107,9 @@ ul {
   }
   .about-content,
   .footer-content__flex-box {
+    padding: 7em 7em;
+  }
+  .supage-content {
     padding: 7em 7em;
   }
   .about-content__text-box {
@@ -1229,6 +1260,9 @@ ul {
   .footer-content__flex-box {
     padding: 7em 4em;
   }
+  .supage-content {
+    padding: 7em 4em;
+  }
   .footer__bottom {
     padding: 3.5em 4em;
   }
@@ -1323,6 +1357,9 @@ ul {
   }
   .about-content,
   .footer-content__flex-box {
+    padding: 7em 3em;
+  }
+  .supage-content {
     padding: 7em 3em;
   }
   .footer__bottom {
@@ -1498,6 +1535,9 @@ ul {
   }
   .about-content,
   .footer-content__flex-box {
+    padding: 2em;
+  }
+  .supage-content {
     padding: 2em;
   }
   .footer__bottom {

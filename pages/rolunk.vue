@@ -6,7 +6,9 @@ useHead({
 
 <template>
   <div class="supage-content position-relative" id="rolunk">
-    <h2 class="supage-content__h2 text-color">Rólunk</h2>
+    <h2 class="supage-content__h2 text-color text-transform-uppercase">
+      Rólunk
+    </h2>
     <p>
       Cégünk a Precision Bearing Kft. szerteágazó kereskedelmi, és szolgáltató
       tevékenységét a piaci és vevői igényekhez igazítva áll partnerei
