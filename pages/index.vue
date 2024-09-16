@@ -96,8 +96,8 @@ const headerClass = (index: number) => {
       <h4 class="blog-content__h4 text-transform-uppercase t-end text-color">
         blog
       </h4>
-      <p class="blog-content__p">Feltöltés alatt...</p>
-      <div class="accordion-content position-relative d-none">
+      <!-- <p class="blog-content__p">Feltöltés alatt...</p> -->
+      <div class="accordion-content position-relative">
         <div
           v-for="(item, index) in AccordionItems"
           :key="index"
