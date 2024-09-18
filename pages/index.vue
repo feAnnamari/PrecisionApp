@@ -1,31 +1,30 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
+import { useAsyncData, useRuntimeConfig } from '#app'
 
-interface AccordionItem {
+interface Post {
+  id: number
   title: string
-  content: string
+  slug: string
+  body: string
+  image: string
 }
 
-const AccordionItems: AccordionItem[] = [
-  { title: 'Kell-e regisztrálnom a vásárláshoz?', content: 'Tartalom 1' },
-  {
-    title: 'Okostelefonon és tableten is tudok vásárolni?',
-    content:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-  },
-  { title: 'Hogy adhatom le a rendelésem?', content: 'Tartalom 3' },
-  {
-    title: 'Lehetséges e-mailben, vagy telefonon is rendelni?',
-    content: 'Tartalom 4',
-  },
-]
+const config = useRuntimeConfig()
+
+const { data: itemsPost } = await useAsyncData<Post[]>('posts', () =>
+  $fetch(`${config.public.apiBaseUrl}/json-posts`)
+)
 
 const currentIndex = ref<number | null>(null)
 
 const headerClass = (index: number) => {
   return {
     'accordion-content__header': true,
-    'red-background': currentIndex.value === index,
+    'accordion-bg-color': currentIndex.value === index,
+    'bg-grey': currentIndex.value !== index,
+    'text-white': currentIndex.value === index,
+    'text-dark': currentIndex.value !== index,
   }
 }
 </script>
@@ -76,7 +75,8 @@ const headerClass = (index: number) => {
           Precision Bearing Kft.-nél megtalálja, amire szüksége van!
         </p>
         <div class="about-content__text-box__link-box">
-          <NuxtLink to="rolunk"
+          <NuxtLink
+            to="rolunk"
             class="page-nuxt-link text-transform-uppercase text-color-w f-700"
           >
             TOVÁBB
@@ -96,32 +96,45 @@ const headerClass = (index: number) => {
       <h4 class="blog-content__h4 text-transform-uppercase t-end text-color">
         blog
       </h4>
-      <!-- <p class="blog-content__p">Feltöltés alatt...</p> -->
       <div class="accordion-content position-relative">
         <div
-          v-for="(item, index) in AccordionItems"
-          :key="index"
+          v-for="(item, index) in itemsPost"
+          :key="item.id"
           class="accordion-content__accordion"
           @click="currentIndex = currentIndex === index ? null : index"
         >
           <div class="accordion-content__accordion__flex-box d-flex">
             <div :class="headerClass(index)">
-              <h3 class="accordion-content__header__h3 f-600">
-                {{ item.title }}
-              </h3>
+              <div class="headerClass__flex-box d-flex">
+                <div class="headerClass__flex-box__img-box">
+                  <NuxtImg
+                    height="100%"
+                    loading="lazy"
+                    class="headerClass__flex-box__img-box__img"
+                    :src="`${config.public.apiBaseUrl}/storage/${item.image}`"
+                    :alt="item.title"
+                  />
+                </div>
+                <div class="headerClass__flex-box__text-box">
+                  <h6 class="accordion-content__header__h3 f-600">
+                    {{ item.title }}
+                  </h6>
+                </div>
+              </div>
               <span
                 class="accordion-content__header__arrow"
                 :class="{ 'accordion-is-open': currentIndex === index }"
-              >
-              </span>
+              ></span>
             </div>
             <div
               class="accordion-content__content position-absolute"
               :class="{ AccordionOpen: currentIndex === index }"
             >
-              <p class="accordion-content__content__p text-color">
-                {{ item.content }}
-              </p>
+              <p
+                class="accordion-content__content__p text-color"
+                v-if="item.body"
+                v-html="item.body"
+              ></p>
             </div>
           </div>
         </div>
