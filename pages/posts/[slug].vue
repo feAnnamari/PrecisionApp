@@ -19,7 +19,9 @@ const { data: post, error } = await useAsyncData<Post>('post', () =>
 </script>
 
 <template>
-  <div class="blog-slug-content supage-content supage-content--services position-relative">
+  <div
+    class="blog-slug-content supage-content supage-content--services position-relative"
+  >
     <div v-if="error">Hiba történt: {{ error.message }}</div>
     <div v-else-if="!post">Betöltés...</div>
     <div v-else>
@@ -31,5 +33,10 @@ const { data: post, error } = await useAsyncData<Post>('post', () =>
       />
       <div v-html="post.body"></div>
     </div>
+
+    <NuxtLink to="/" class="go-back-button">
+      <span class="go-back-button__icon">&#8592;</span>
+      <span class="go-back-button__text">Vissza a főoldalra</span>
+    </NuxtLink>
   </div>
 </template>

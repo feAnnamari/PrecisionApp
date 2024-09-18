@@ -226,7 +226,8 @@ ul {
 .footer-content__img-box__img,
 .form-group__input,
 .form-group__textarea,
-.headerClass__flex-box__img-box__img {
+.headerClass__flex-box__img-box__img,
+.blog-content__gBox__iTextBox__img {
   width: 100%;
 }
 
@@ -523,6 +524,66 @@ ul {
 .headerClass__flex-box {
   align-items: center;
 }
+
+.blog-content__gBox {
+  gap: 1.5em;
+  margin: 4em 0 2em 0;
+}
+
+.blog-content__gBox__iTextBox__tBox {
+  background: #f7f7f7;
+  padding: 1em;
+  margin-top: -0.2em;
+}
+
+.blog-content__gBox__iTextBox__tBox__h5 {
+  margin: 0;
+}
+
+.slug-blog__img {
+  width: 70%;
+}
+
+.slug-blog__h2 {
+  margin-bottom: 2em;
+}
+
+.go-back-button {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.go-back-button:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.go-back-button__icon {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.go-back-button:hover .go-back-button__icon {
+  transform: translateX(-5px);
+}
+
+.go-back-button__text {
+  position: relative;
+  z-index: 1;
+}
+
+.blog-content__gBox__iTextBox__img {
+  height: 15em;
+  object-fit: cover;
+}
 /********************  Blog formating end **********************/
 
 /********************  Brands formating start **********************/
@@ -678,7 +739,8 @@ ul {
   .about-content__text-box__h2,
   .blog-content__h4,
   .brands-content__h5,
-  .footer__bottom__text-box__h6 {
+  .footer__bottom__text-box__h6,
+  .blog-content__gBox__iTextBox__tBox__h5 {
     font-size: 1.7rem;
   }
   .services-content__img-text-box__img {
@@ -771,7 +833,8 @@ ul {
   .about-content__text-box__h2,
   .blog-content__h4,
   .brands-content__h5,
-  .footer__bottom__text-box__h6 {
+  .footer__bottom__text-box__h6,
+  .blog-content__gBox__iTextBox__tBox__h5 {
     font-size: 1.5rem;
   }
   .services-content__img-text-box__img {
@@ -867,7 +930,8 @@ ul {
   .about-content__text-box__h2,
   .blog-content__h4,
   .brands-content__h5,
-  .footer__bottom__text-box__h6 {
+  .footer__bottom__text-box__h6,
+  .blog-content__gBox__iTextBox__tBox__h5 {
     font-size: 1.4rem;
   }
   .services-content__img-text-box__img {
@@ -963,7 +1027,8 @@ ul {
   .about-content__text-box__h2,
   .blog-content__h4,
   .brands-content__h5,
-  .footer__bottom__text-box__h6 {
+  .footer__bottom__text-box__h6,
+  .blog-content__gBox__iTextBox__tBox__h5 {
     font-size: 1.2rem;
   }
   .services-content__img-text-box__img {
@@ -1059,7 +1124,8 @@ ul {
   .about-content__text-box__h2,
   .blog-content__h4,
   .brands-content__h5,
-  .footer__bottom__text-box__h6 {
+  .footer__bottom__text-box__h6,
+  .blog-content__gBox__iTextBox__tBox__h5 {
     font-size: 1.2rem;
   }
   .services-content__img-text-box__img {
@@ -1155,7 +1221,8 @@ ul {
   .about-content__text-box__h2,
   .blog-content__h4,
   .brands-content__h5,
-  .footer__bottom__text-box__h6 {
+  .footer__bottom__text-box__h6,
+  .blog-content__gBox__iTextBox__tBox__h5 {
     font-size: 1.2rem;
   }
   .services-content__img-text-box__img {
@@ -1219,7 +1286,8 @@ ul {
   .about-content__text-box__h2,
   .blog-content__h4,
   .brands-content__h5,
-  .footer__bottom__text-box__h6 {
+  .footer__bottom__text-box__h6,
+  .blog-content__gBox__iTextBox__tBox__h5 {
     font-size: 1rem;
   }
   .services-content__img-text-box__img {
@@ -1303,7 +1371,8 @@ ul {
   .about-content__text-box__h2,
   .blog-content__h4,
   .brands-content__h5,
-  .footer__bottom__text-box__h6 {
+  .footer__bottom__text-box__h6,
+  .blog-content__gBox__iTextBox__tBox__h5 {
     font-size: 1rem;
   }
   .services-content__img-text-box__img {
@@ -1490,7 +1559,8 @@ ul {
   .about-content__text-box__h2,
   .blog-content__h4,
   .brands-content__h5,
-  .footer__bottom__text-box__h6 {
+  .footer__bottom__text-box__h6,
+  .blog-content__gBox__iTextBox__tBox__h5 {
     font-size: 1.1rem;
   }
   .services-content__img-text-box__h3,
@@ -1506,7 +1576,7 @@ ul {
     height: 38em;
   }
   .page-nuxt-link {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .brands-content {
     padding: 1em 3em 7em 3em;
@@ -1527,6 +1597,13 @@ ul {
   }
   .footer__bottom.grid-4 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .slug-blog__img {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .slug-blog__h2 {
+    margin-bottom: 1.5em;
   }
 }
 
@@ -1680,7 +1757,8 @@ ul {
   .about-content__text-box__h2,
   .blog-content__h4,
   .brands-content__h5,
-  .footer__bottom__text-box__h6 {
+  .footer__bottom__text-box__h6,
+  .blog-content__gBox__iTextBox__tBox__h5 {
     font-size: 1.1rem;
   }
   .services-content__img-text-box__h3,
@@ -1745,6 +1823,13 @@ ul {
   }
   .footer__bottom__img-box {
     justify-content: unset;
+  }
+  .slug-blog__img {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .slug-blog__h2 {
+    margin-bottom: 1.5em;
   }
 }
 

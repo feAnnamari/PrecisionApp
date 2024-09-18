@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+// import { ref } from 'vue'
 import { useAsyncData, useRuntimeConfig } from '#app'
 
 interface Post {
@@ -16,16 +16,24 @@ const { data: itemsPost } = await useAsyncData<Post[]>('posts', () =>
   $fetch(`${config.public.apiBaseUrl}/json-posts`)
 )
 
-const currentIndex = ref<number | null>(null)
+// const currentIndex = ref<number | null>(null)
 
-const headerClass = (index: number) => {
-  return {
-    'accordion-content__header': true,
-    'accordion-bg-color': currentIndex.value === index,
-    'bg-grey': currentIndex.value !== index,
-    'text-white': currentIndex.value === index,
-    'text-dark': currentIndex.value !== index,
+// const headerClass = (index: number) => {
+//   return {
+//     'accordion-content__header': true,
+//     'accordion-bg-color': currentIndex.value === index,
+//     'bg-grey': currentIndex.value !== index,
+//     'text-white': currentIndex.value === index,
+//     'text-dark': currentIndex.value !== index,
+//   }
+// }
+
+function truncateContent(content: string, maxLength: number): string {
+  const textContent = content.replace(/<[^>]*>/g, '')
+  if (textContent.length <= maxLength) {
+    return textContent
   }
+  return textContent.slice(0, maxLength) + '...'
 }
 </script>
 
@@ -92,11 +100,11 @@ const headerClass = (index: number) => {
     </div>
   </section>
   <section>
-    <div class="blog-content">
+    <div class="blog-content d-none">
       <h4 class="blog-content__h4 text-transform-uppercase t-end text-color">
         blog
       </h4>
-      <div class="accordion-content position-relative">
+      <!-- <div class="accordion-content position-relative">
         <div
           v-for="(item, index) in itemsPost"
           :key="item.id"
@@ -132,11 +140,47 @@ const headerClass = (index: number) => {
             >
               <p
                 class="accordion-content__content__p text-color"
-                v-if="item.body"
                 v-html="item.body"
               ></p>
             </div>
           </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="blog-content">
+      <h4 class="blog-content__h4 text-transform-uppercase t-end text-color">
+        blog
+      </h4>
+
+      <div class="blog-content__gBox grid-3">
+        <div
+          v-for="post in itemsPost"
+          :key="post.slug"
+          class="blog-content__gBox__iTextBox"
+        >
+          <NuxtLink
+            class="blog-box__link-box__Nuxtlink"
+            :to="`/posts/${post.slug}`"
+          >
+            <NuxtImg
+              height="100%"
+              loading="lazy"
+              class="blog-content__gBox__iTextBox__img"
+              :src="`${config.public.apiBaseUrl}/storage/${post.image}`"
+              alt="{{ post.title }}"
+            />
+            <div class="blog-content__gBox__iTextBox__tBox">
+              <h5
+                class="blog-content__gBox__iTextBox__tBox__h5  text-color"
+              >
+                {{ post.title }}
+              </h5>
+              <p
+                class="blog-content__gBox__iTextBox__tBox__p text-color"
+                v-html="truncateContent(post.body, 150)"
+              ></p>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>

@@ -2,8 +2,10 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      apiBaseUrl: process.env.API_BASE_URL || 'https://www.ibc-csapagyak.hu/restapi/public'
-    }
+      apiBaseUrl:
+        process.env.API_BASE_URL ||
+        'https://www.ibc-csapagyak.hu/restapi/public',
+    },
   },
   devtools: { enabled: true },
   css: ['~/assets/css/app.css'],
@@ -52,7 +54,11 @@ export default defineNuxtConfig({
   modules: ['@nuxt/image', '@nuxtjs/sitemap', '@nuxt/content'],
 
   site: {
-    url: 'https://www.alkuszom.info',
+    url: 'www.ibc-csapagyak.hu',
     trailingSlash: true,
+  },
+
+  sitemap: {
+    sources: ['/api/sitemap'],
   },
 })
