@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import { useNuxtApp } from '#app'
 
 const FooterLinks = [
   // { name: 'Galéria', path: '/galeria' },
@@ -8,8 +7,6 @@ const FooterLinks = [
   { name: 'Ajánlatkérés', path: '/ajanlatkeres' },
   { name: 'Szolgáltatások', path: '/szolgaltatasok' },
 ]
-
-const nuxtApp = useNuxtApp()
 
 const form = ref({
   name: '',
@@ -22,18 +19,24 @@ const isSent = ref(false)
 
 const sendEmail = async () => {
   try {
-    await nuxtApp.$mail.send({
-      to: 'mualimadnan8@gmail.com',
-      subject: `Új üzenetet küldött - ${form.value.name}`,
-      html: `
-        <p><strong>Name:</strong> ${form.value.name}</p>
-        <p><strong>Email:</strong> ${form.value.email}</p>
-        <p><strong>Phone Number:</strong> ${form.value.phonenumber}</p>
-        <p><strong>Message:</strong></p>
-        <p>${form.value.message}</p>
-      `,
+    const response = await fetch('https://formspree.io/f/mnnakner', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: form.value.name,
+        email: form.value.email,
+        phonenumber: form.value.phonenumber,
+        message: form.value.message,
+      }),
     })
-    isSent.value = true
+
+    if (response.ok) {
+      isSent.value = true
+    } else {
+      throw new Error('Failed to send email')
+    }
   } catch (error) {
     console.error('Error sending email:', error)
     alert('Failed to send email.')
@@ -108,28 +111,34 @@ const sendEmail = async () => {
                 ></textarea>
               </div>
             </div>
-          </form>
-          <div class="contact-form__link-box d-flex">
-            <div class="contact-form__link-box__text-box">
-              <p class="contact-form__link-box__text-box__p">
-                A Küldés gombra való kattintással automatikusan elfogadja az
-                Adatvédelmi Szabályzatot.
+            <div v-if="!isSent" class="contact-form__link-box d-flex">
+              <div class="contact-form__link-box__text-box">
+                <p class="contact-form__link-box__text-box__p">
+                  A Küldés gombra való kattintással automatikusan elfogadja az
+                  Adatvédelmi Szabályzatot.
+                </p>
+              </div>
+              <div class="contact-form__link-box__NuxtLink">
+                <button
+                  class="page-nuxt-link text-transform-uppercase text-color-w cursor f-700"
+                  type="submit"
+                >
+                  KÜLDÉS
+                  <NuxtImg
+                    src="/img/footer/footer-arrow-r.svg"
+                    alt="Precision Bearing kft"
+                    class="page-nuxt-link__img page-nuxt-link__img--formating"
+                    height="100%"
+                  />
+                </button>
+              </div>
+            </div>
+            <div v-if="isSent" class="confirmation-message">
+              <p class="confirmation-message__p text-color-w text-center">
+                Köszönjük az üzenetét, hamarosan felvesszük Önnel a kapcsolatot.
               </p>
             </div>
-            <div class="contact-form__link-box__NuxtLink">
-              <NuxtLink
-                class="page-nuxt-link text-transform-uppercase text-color-w f-700"
-              >
-                KÜLDÉS
-                <NuxtImg
-                  src="/img/footer/footer-arrow-r.svg"
-                  alt="Precision Bearing kft"
-                  class="page-nuxt-link__img page-nuxt-link__img--formating"
-                  height="100%"
-                />
-              </NuxtLink>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

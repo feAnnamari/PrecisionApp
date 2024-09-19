@@ -675,6 +675,10 @@ ul {
   width: 70%;
 }
 
+.confirmation-message {
+  background: #1f273f;
+  padding: 0.3em;
+}
 /********************  Footer formating end **********************/
 
 /********************  Subpage formating start **********************/
@@ -1819,7 +1823,7 @@ ul {
   .footer-content__text-box {
     right: 0;
     height: 100%;
-    padding: 5em 2em 0 2em;
+    padding: 5em 1em 0 1em;
   }
   .footer__bottom__img-box {
     justify-content: unset;
