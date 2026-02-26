@@ -238,7 +238,8 @@ ul {
 
 .about-content,
 .footer-content__flex-box,
-.footer__info-div {
+.footer__info-div,
+.subpage-content-document__btn {
   background: #20273f;
 }
 
@@ -690,6 +691,19 @@ ul {
 .supage-content__p {
   width: 80%;
   line-height: 1.5em;
+}
+
+.supage-content__pdf-box {
+  margin-top: 3em;
+}
+
+.subpage-content-document__btn {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 1.5em 3em;
+}
+
+.subpage-content-document__ul__p {
+  color: red;
 }
 
 /********************  Subpage formating formating end **********************/

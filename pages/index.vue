@@ -1,21 +1,9 @@
 <script setup lang="ts">
 // import { ref } from 'vue'
-import { useAsyncData, useRuntimeConfig } from '#app'
+import { fetchPosts, truncateContent } from '~/utils/js/utils'
 
-interface Post {
-  id: number
-  title: string
-  slug: string
-  body: string
-  image: string
-}
-
-const config = useRuntimeConfig()
-
-const { data: itemsPost } = await useAsyncData<Post[]>('posts', () =>
-  $fetch(`${config.public.apiBaseUrl}/json-posts`)
-)
-
+const itemsPost = await fetchPosts()
+const latestPosts = itemsPost.value?.slice(-3) || []
 // const currentIndex = ref<number | null>(null)
 
 // const headerClass = (index: number) => {
@@ -27,14 +15,6 @@ const { data: itemsPost } = await useAsyncData<Post[]>('posts', () =>
 //     'text-dark': currentIndex.value !== index,
 //   }
 // }
-
-function truncateContent(content: string, maxLength: number): string {
-  const textContent = content.replace(/<[^>]*>/g, '')
-  if (textContent.length <= maxLength) {
-    return textContent
-  }
-  return textContent.slice(0, maxLength) + '...'
-}
 </script>
 
 <template>
@@ -154,7 +134,7 @@ function truncateContent(content: string, maxLength: number): string {
 
       <div class="blog-content__gBox grid-3">
         <div
-          v-for="post in itemsPost"
+          v-for="post in latestPosts"
           :key="post.slug"
           class="blog-content__gBox__iTextBox"
         >
@@ -166,18 +146,16 @@ function truncateContent(content: string, maxLength: number): string {
               height="100%"
               loading="lazy"
               class="blog-content__gBox__iTextBox__img"
-              :src="`${config.public.apiBaseUrl}/storage/${post.image}`"
+              :src="`${$config.public.apiBaseUrl}/storage/${post.image}`"
               alt="{{ post.title }}"
             />
             <div class="blog-content__gBox__iTextBox__tBox">
-              <h5
-                class="blog-content__gBox__iTextBox__tBox__h5  text-color"
-              >
+              <h5 class="blog-content__gBox__iTextBox__tBox__h5 text-color">
                 {{ post.title }}
               </h5>
               <p
                 class="blog-content__gBox__iTextBox__tBox__p text-color"
-                v-html="truncateContent(post.body, 150)"
+                v-html="truncateContent(post.body, 120)"
               ></p>
             </div>
           </NuxtLink>

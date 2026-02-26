@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   ssr: true,
   app: {
     head: {
-      title: 'Precision Bearing',
+      title: 'Precision Bearing: Minőségi Csapágyak és Lineártechnika',
       htmlAttrs: {
         lang: 'hu',
       },
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
           hid: 'description',
           name: 'description',
           content:
-            'Személyre szabott biztosítási megoldások mindenkinek. Megbízható alkusz a biztosítási piacon.',
+            'NSK, IBC, INA, FAG, NTN, THK, Hiwin, CPC, Bosch Rexroth, UKF és GMN prémium csapágyak, golyósorsók és lineárvezetők forgalmazása, javítása és felújítása. Személyre szabott megoldásaink segítenek optimalizálni a főorsók és szervomotorok teljesítményét, hogy a gépek mindig maximális hatékonysággal működjenek.',
         },
         { name: 'format-detection', content: 'telephone=no' },
         { hid: 'robots', name: 'robots', content: 'index, follow' },
@@ -46,6 +46,19 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"',
+        },
+      ],
+      script: [
+        {
+          hid: 'clarity',
+          type: 'text/javascript',
+          children: `
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "p75v58i0zi");
+          `,
         },
       ],
     },

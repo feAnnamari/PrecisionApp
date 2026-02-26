@@ -4,7 +4,7 @@ import { ref } from 'vue'
 const FooterLinks = [
   // { name: 'Galéria', path: '/galeria' },
   { name: 'Rólunk', path: '/rolunk' },
-  { name: 'Ajánlatkérés', path: '/ajanlatkeres' },
+  { name: 'Ajánlatkérés', path: '/kapcsolat' },
   { name: 'Szolgáltatások', path: '/szolgaltatasok' },
 ]
 
@@ -173,7 +173,7 @@ const sendEmail = async () => {
         </p>
         <p class="footer__bottom__text-box__p">
           <NuxtLink
-            to="letoltheto-anyagok"
+            to="/letoltheto-anyagok"
             class="footer__bottom__text-box__p__NuxtLink text-color"
           >
             Letölthető anyagok
@@ -181,7 +181,7 @@ const sendEmail = async () => {
         </p>
         <p class="footer__bottom__text-box__p">
           <NuxtLink
-            to="kapcsolat"
+            to="/kapcsolat"
             class="footer__bottom__text-box__p__NuxtLink text-color"
           >
             Kapcsolat
